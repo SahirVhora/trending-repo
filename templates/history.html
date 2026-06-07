@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}History - GitHub Trending{% endblock %}
+{% block content %}
+<h1>📚 Snapshot History</h1>
+
+<div class="card">
+    {% if snapshots %}
+    <table id="historyTable">
+        <thead>
+            <tr>
+                <th style="width:30px;"><input type="checkbox" id="selectAll" title="Select all"></th>
+                <th>Date</th>
+                <th>Language Filter</th>
+                <th>Time Range</th>
+                <th style="text-align:right;">Repos</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for s in snapshots %}
+            <tr>
+                <td><input type="checkbox" class="snapshot-check" value="{{ s.filename }}"></td>
+                <td><strong>{{ s.date }}</strong></td>
+                <td><span class="badge">{{ s.language }}</span></td>
+                <td>{{ s.since }}</td>
+                <td style="text-align:right;font-weight:600;">{{ s.count }}</td>
+                <td>
+                    <a href="/api/snapshot?file={{ s.filename }}" class="btn btn-secondary" style="padding:0.3rem 0.6rem;font-size:0.8rem;" target="_blank">JSON</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div style="margin-top:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <button id="compareBtn" class="btn" style="padding:0.4rem 0.8rem;font-size:0.85rem;" disabled>📊 Compare Selected</button>
+    </div>
+    <script>
+    (function() {
+        var selectAll = document.getElementById('selectAll');
+        var checks = document.querySelectorAll('.snapshot-check');
+        var compareBtn = document.getElementById('compareBtn');
+
+        function updateBtn() {
+            var checked = Array.from(checks).filter(function(c) { return c.checked; });
+            if (compareBtn) compareBtn.disabled = checked.length !== 2;
+        }
+
+        if (selectAll) selectAll.addEventListener('change', function() {
+            checks.forEach(function(c) { c.checked = selectAll.checked; });
+            updateBtn();
+        });
+
+        checks.forEach(function(c) {
+            c.addEventListener('change', updateBtn);
+        });
+
+        if (compareBtn) compareBtn.addEventListener('click', function() {
+            var checked = Array.from(checks).filter(function(c) { return c.checked; });
+            if (checked.length === 2) {
+                // Ensure older file comes first (lexicographically smaller date in filename)
+                var files = [checked[0].value, checked[1].value].sort();
+                window.location.href = '/compare/' + encodeURIComponent(files[0]) + '/' + encodeURIComponent(files[1]);
+            }
+        });
+    })();
+    </script>
+    {% else %}
+    <div class="empty-state">
+        <p>No snapshots saved yet.</p>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">Run <code>python fetch_trending.py --save</code> to create your first snapshot.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

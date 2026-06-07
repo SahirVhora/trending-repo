@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}Trend Comparison - GitHub Trending{% endblock %}
+{% block content %}
+<h1>📈 Trend Comparison</h1>
+
+{% if error %}
+<div class="card" style="border-color:var(--danger);">
+    <p style="color:var(--danger);">{{ error }}</p>
+</div>
+{% else %}
+
+<div class="stats">
+    <div class="stat-card">
+        <div class="value diff-entered">{{ entered|length }}</div>
+        <div class="label">Entered</div>
+    </div>
+    <div class="stat-card">
+        <div class="value diff-left">{{ left|length }}</div>
+        <div class="label">Left</div>
+    </div>
+    <div class="stat-card">
+        <div class="value diff-stayed">{{ stayed|length }}</div>
+        <div class="label">Stayed</div>
+    </div>
+</div>
+
+<p style="color:var(--text-muted);margin-bottom:1.5rem;">
+    Comparing <strong>{{ old_date }}</strong> → <strong>{{ new_date }}</strong>
+</p>
+
+<div class="chart-grid" style="grid-template-columns: 1fr;">
+    <div class="chart-card">
+        <h3>Snapshot Comparison</h3>
+        <div class="chart-wrapper" style="height:240px;">
+            <canvas id="trendChart" aria-label="Trend comparison chart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script>
+(function() {
+    if (typeof Chart === 'undefined') return;
+    var entered = {{ entered|length }};
+    var left = {{ left|length }};
+    var stayed = {{ stayed|length }};
+    var textMuted = getComputedStyle(document.body).getPropertyValue('--text-muted').trim();
+    var chartBorder = getComputedStyle(document.body).getPropertyValue('--border').trim();
+
+    new Chart(document.getElementById('trendChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Entered', 'Left', 'Stayed'],
+            datasets: [{
+                label: 'Repositories',
+                data: [entered, left, stayed],
+                backgroundColor: ['#3fb950', '#f85149', '#d29922'],
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { ticks: { color: textMuted }, grid: { color: chartBorder } },
+                y: { ticks: { color: textMuted }, grid: { color: chartBorder }, beginAtZero: true }
+            }
+        }
+    });
+})();
+</script>
+
+{% if entered %}
+<div class="card">
+    <h2 style="color:var(--success);margin-top:0;">🆕 Entered trending ({{ entered|length }})</h2>
+    <table>
+        <thead>
+            <tr><th>Repository</th><th>Language</th><th>Stars</th></tr>
+        </thead>
+        <tbody>
+            {% for r in entered %}
+            <tr>
+                <td><a href="{{ r.url }}" target="_blank">{{ r.name }}</a></td>
+                <td><span class="badge">{{ r.language }}</span></td>
+                <td style="font-weight:600;">{{ r.total_stars }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if left %}
+<div class="card">
+    <h2 style="color:var(--danger);margin-top:0;">❌ Left trending ({{ left|length }})</h2>
+    <table>
+        <thead>
+            <tr><th>Repository</th><th>Language</th><th>Stars</th></tr>
+        </thead>
+        <tbody>
+            {% for r in left %}
+            <tr>
+                <td><a href="{{ r.url }}" target="_blank">{{ r.name }}</a></td>
+                <td><span class="badge">{{ r.language }}</span></td>
+                <td style="font-weight:600;">{{ r.total_stars }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if stayed %}
+<div class="card">
+    <h2 style="color:var(--warning);margin-top:0;">📊 Still trending ({{ stayed|length }})</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Language</th>
+                <th style="text-align:right;">Old Stars</th>
+                <th style="text-align:right;">New Stars</th>
+                <th style="text-align:right;">Δ</th>
+                <th style="text-align:right;">Rank Δ</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for s in stayed %}
+            <tr>
+                <td><a href="https://github.com/{{ s.name }}" target="_blank">{{ s.name }}</a></td>
+                <td><span class="badge">{{ s.language }}</span></td>
+                <td style="text-align:right;">{{ s.old_stars }}</td>
+                <td style="text-align:right;">{{ s.new_stars }}</td>
+                <td style="text-align:right;font-weight:600;{% if s.delta > 0 %}color:var(--success);{% elif s.delta < 0 %}color:var(--danger);{% endif %}">
+                    {% if s.delta != 0 %}{{ "+%d"|format(s.delta) if s.delta > 0 else s.delta }}{% else %}-{% endif %}
+                </td>
+                <td style="text-align:right;font-weight:600;{% if s.new_rank < s.old_rank %}color:var(--success);{% elif s.new_rank > s.old_rank %}color:var(--danger);{% endif %}">
+                    {% set rd = s.new_rank - s.old_rank %}
+                    {% if rd != 0 %}{{ "+%d"|format(rd) if rd > 0 else rd }}{% else %}-{% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% endif %}
+{% endblock %}

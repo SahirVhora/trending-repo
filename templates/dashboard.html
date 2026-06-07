@@ -1,0 +1,299 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - GitHub Trending{% endblock %}
+{% block content %}
+<h1>🔥 Trending Today</h1>
+
+<div class="card">
+    <div class="card-header">
+        <form method="get" action="/" style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+            <label style="color:var(--text-muted);font-size:0.9rem;">Time range</label>
+            <select name="since" onchange="this.form.submit()" style="background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:0.4rem 0.75rem;font-size:0.9rem;">
+                <option value="daily" {% if since == 'daily' %}selected{% endif %}>Daily</option>
+                <option value="weekly" {% if since == 'weekly' %}selected{% endif %}>Weekly</option>
+                <option value="monthly" {% if since == 'monthly' %}selected{% endif %}>Monthly</option>
+            </select>
+            <label style="color:var(--text-muted);font-size:0.9rem;">Language</label>
+            <input type="text" name="lang" value="{{ lang }}" placeholder="e.g. python" style="background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:0.4rem 0.75rem;font-size:0.9rem;width:120px;">
+            <button type="submit" class="btn">Filter</button>
+        </form>
+        <a href="/api/fetch?since={{ since }}&lang={{ lang }}" class="btn btn-secondary" target="_blank">JSON API</a>
+    </div>
+
+    {% if error %}
+    <p style="color:var(--danger);margin-bottom:1rem;">{{ error }}</p>
+    {% endif %}
+    {% if repos %}
+    <div style="margin-bottom:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+        <input type="text" id="searchInput" placeholder="🔎 Search by repo name or description..." aria-label="Search repositories" style="background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:0.5rem 0.75rem;font-size:0.95rem;width:100%;max-width:400px;">
+        <a href="/api/export/csv?since={{ since }}&lang={{ lang }}" class="btn btn-secondary" style="font-size:0.85rem;padding:0.45rem 0.75rem;">⬇️ Export CSV</a>
+        {% if cache_age is not none %}
+        <span id="cacheAge" style="color:var(--text-muted);font-size:0.85rem;"></span>
+        {% endif %}
+    </div>
+    <table id="repoTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th class="sort-header" data-col="1" style="cursor:pointer;user-select:none;">Repository <span class="sort-indicator"></span></th>
+                <th class="sort-header" data-col="2" style="cursor:pointer;user-select:none;">Language <span class="sort-indicator"></span></th>
+                <th class="sort-header" data-col="3" style="text-align:right;cursor:pointer;user-select:none;">Stars Today <span class="sort-indicator"></span></th>
+                <th class="sort-header" data-col="4" style="text-align:right;cursor:pointer;user-select:none;">Total Stars <span class="sort-indicator"></span></th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in repos %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:600;">{{ loop.index }}</td>
+                <td>
+                    <a href="/repo/{{ r.name }}?since={{ since }}&lang={{ lang }}">{{ r.name }}</a>
+                </td>
+                <td><span class="badge">{{ r.language }}</span></td>
+                <td style="text-align:right;color:var(--success);font-weight:600;" data-sort="{{ r.stars_today }}">{{ r.stars_today }}</td>
+                <td style="text-align:right;font-weight:600;" data-sort="{{ r.total_stars }}">{{ r.total_stars }}</td>
+                <td style="color:var(--text-muted);max-width:400px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ r.description }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div id="paginationControls" style="display:flex;align-items:center;gap:0.75rem;margin-top:1rem;flex-wrap:wrap;">
+        <button id="prevPage" class="btn btn-secondary" style="padding:0.35rem 0.75rem;font-size:0.85rem;" disabled>← Prev</button>
+        <span id="pageIndicator" style="color:var(--text-muted);font-size:0.9rem;">Page 1 of 1</span>
+        <button id="nextPage" class="btn btn-secondary" style="padding:0.35rem 0.75rem;font-size:0.85rem;" disabled>Next →</button>
+    </div>
+    <p style="margin-top:0.75rem;color:var(--text-muted);font-size:0.85rem;">Total: <span id="repoCount">{{ repos|length }}</span> repositories</p>
+
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Languages</h3>
+            <div class="chart-wrapper">
+                <canvas id="langChart" aria-label="Language distribution chart"></canvas>
+            </div>
+        </div>
+        <div class="chart-card">
+            <h3>Top Starred Repos</h3>
+            <div class="chart-wrapper">
+                <canvas id="starsChart" aria-label="Top starred repositories chart"></canvas>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p>No trending repositories found.</p>
+    </div>
+    {% endif %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script>
+(function() {
+    if (typeof Chart === 'undefined') return;
+    var repos = {{ repos|tojson }};
+    if (!repos || !repos.length) return;
+
+    // Language distribution
+    var langCounts = {};
+    repos.forEach(function(r) {
+        var lang = r.language || 'Unknown';
+        langCounts[lang] = (langCounts[lang] || 0) + 1;
+    });
+    var langLabels = Object.keys(langCounts);
+    var langData = Object.values(langCounts);
+    var langPalette = ['#58a6ff','#3fb950','#d29922','#f85149','#a371f7','#56d4dd','#fa7f34','#79c0ff','#7ee787','#ffd54f','#ff7b72','#d2a8ff'];
+    var langColors = langLabels.map(function(_, i) { return langPalette[i % langPalette.length]; });
+
+    var textMuted = getComputedStyle(document.body).getPropertyValue('--text-muted').trim();
+    var chartBorder = getComputedStyle(document.body).getPropertyValue('--border').trim();
+
+    new Chart(document.getElementById('langChart'), {
+        type: 'doughnut',
+        data: {
+            labels: langLabels,
+            datasets: [{
+                data: langData,
+                backgroundColor: langColors,
+                borderColor: chartBorder,
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom', labels: { color: textMuted, padding: 16 } }
+            }
+        }
+    });
+
+    // Top starred repos (parse "1,234" -> number)
+    function parseStars(s) {
+        if (!s) return 0;
+        var n = parseInt(String(s).replace(/,/g, ''), 10);
+        return isNaN(n) ? 0 : n;
+    }
+    var sorted = repos.slice().sort(function(a, b) {
+        return parseStars(b.total_stars) - parseStars(a.total_stars);
+    }).slice(0, 10);
+
+    new Chart(document.getElementById('starsChart'), {
+        type: 'bar',
+        data: {
+            labels: sorted.map(function(r) { return r.name; }),
+            datasets: [{
+                label: 'Total Stars',
+                data: sorted.map(function(r) { return parseStars(r.total_stars); }),
+                backgroundColor: '#58a6ff',
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { ticks: { color: textMuted, maxRotation: 45, minRotation: 45 }, grid: { color: chartBorder } },
+                y: { ticks: { color: textMuted }, grid: { color: chartBorder } }
+            }
+        }
+    });
+})();
+</script>
+<script>
+(function() {
+    var input = document.getElementById('searchInput');
+    var table = document.getElementById('repoTable');
+    var countSpan = document.getElementById('repoCount');
+    var prevBtn = document.getElementById('prevPage');
+    var nextBtn = document.getElementById('nextPage');
+    var pageIndicator = document.getElementById('pageIndicator');
+    var PAGE_SIZE = 10;
+    var currentPage = 1;
+
+    if (!table) return;
+
+    function getAllRows() {
+        return Array.from(table.querySelectorAll('tbody tr'));
+    }
+
+    function getFilteredRows() {
+        var term = input ? input.value.toLowerCase() : '';
+        return getAllRows().filter(function(row) {
+            if (!term) return true;
+            var name = row.cells[1].textContent.toLowerCase();
+            var desc = row.cells[5].textContent.toLowerCase();
+            return name.indexOf(term) !== -1 || desc.indexOf(term) !== -1;
+        });
+    }
+
+    function render() {
+        var filtered = getFilteredRows();
+        var totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+        if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+        if (currentPage < 1) currentPage = 1;
+
+        // First hide all, then show the page slice
+        getAllRows().forEach(function(row) { row.style.display = 'none'; });
+        var start = (currentPage - 1) * PAGE_SIZE;
+        var end = start + PAGE_SIZE;
+        var pageRows = filtered.slice(start, end);
+        pageRows.forEach(function(row) { row.style.display = ''; });
+
+        if (countSpan) countSpan.textContent = filtered.length;
+        var controls = document.getElementById('paginationControls');
+        if (filtered.length === 0) {
+            if (controls) controls.style.display = 'none';
+        } else {
+            if (controls) controls.style.display = 'flex';
+            if (pageIndicator) pageIndicator.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+            if (prevBtn) prevBtn.disabled = currentPage <= 1;
+            if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+        }
+    }
+
+    if (input) input.addEventListener('input', function() { currentPage = 1; render(); });
+    if (prevBtn) prevBtn.addEventListener('click', function() { currentPage--; render(); });
+    if (nextBtn) nextBtn.addEventListener('click', function() { currentPage++; render(); });
+
+    render();
+})();
+</script>
+<script>
+(function() {
+    var table = document.getElementById('repoTable');
+    if (!table) return;
+    var headers = table.querySelectorAll('th.sort-header');
+    var currentSort = { col: -1, dir: 1 };
+
+    function parseVal(row, col) {
+        var cell = row.cells[col];
+        var attr = cell.getAttribute('data-sort');
+        if (attr !== null) {
+            var n = parseInt(attr.replace(/,/g, ''), 10);
+            return isNaN(n) ? attr.toLowerCase() : n;
+        }
+        return cell.textContent.trim().toLowerCase();
+    }
+
+    headers.forEach(function(th) {
+        th.addEventListener('click', function() {
+            var col = parseInt(th.getAttribute('data-col'), 10);
+            if (currentSort.col === col) {
+                currentSort.dir *= -1;
+            } else {
+                currentSort.col = col;
+                currentSort.dir = 1;
+            }
+
+            // Update indicators
+            headers.forEach(function(h) {
+                var ind = h.querySelector('.sort-indicator');
+                if (ind) ind.textContent = '';
+            });
+            var ind = th.querySelector('.sort-indicator');
+            if (ind) ind.textContent = currentSort.dir === 1 ? ' ▲' : ' ▼';
+
+            var tbody = table.querySelector('tbody');
+            var rows = Array.from(tbody.querySelectorAll('tr'));
+            rows.sort(function(a, b) {
+                var av = parseVal(a, col);
+                var bv = parseVal(b, col);
+                if (av < bv) return -1 * currentSort.dir;
+                if (av > bv) return 1 * currentSort.dir;
+                return 0;
+            });
+            rows.forEach(function(row) { tbody.appendChild(row); });
+
+            // Trigger pagination re-render if it exists
+            var input = document.getElementById('searchInput');
+            if (input) {
+                input.dispatchEvent(new Event('input'));
+            }
+        });
+    });
+})();
+</script>
+{% if cache_age is not none %}
+<script>
+(function() {
+    var age = {{ cache_age }};
+    var el = document.getElementById('cacheAge');
+    if (!el) return;
+    function fmt(sec) {
+        if (sec < 60) return sec + 's ago';
+        if (sec < 3600) return Math.floor(sec / 60) + 'm ago';
+        return Math.floor(sec / 3600) + 'h ago';
+    }
+    function update() {
+        age += 1;
+        var text = 'Cached: ' + fmt(age);
+        if (age > 900) text += ' (stale)';
+        el.textContent = text;
+        if (age > 900) el.style.color = 'var(--danger)';
+        else if (age > 600) el.style.color = 'var(--warning)';
+    }
+    update();
+    setInterval(update, 1000);
+})();
+</script>
+{% endif %}
+{% endblock %}

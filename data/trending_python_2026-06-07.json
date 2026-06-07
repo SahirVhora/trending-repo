@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "fetched_at": "2026-06-07T11:43:21.992808",
+    "since": "daily",
+    "language": "python",
+    "count": 17
+  },
+  "repositories": [
+    {
+      "name": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars_today": "439",
+      "total_stars": "29,410",
+      "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+      "name": "MemPalace/mempalace",
+      "description": "The best-benchmarked open-source AI memory system. And it's free.",
+      "language": "Python",
+      "stars_today": "446",
+      "total_stars": "54,513",
+      "url": "https://github.com/MemPalace/mempalace"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "stars_today": "683",
+      "total_stars": "22,839",
+      "url": "https://github.com/Panniantong/Agent-Reach"
+    },
+    {
+      "name": "openai/whisper",
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "language": "Python",
+      "stars_today": "150",
+      "total_stars": "101,988",
+      "url": "https://github.com/openai/whisper"
+    },
+    {
+      "name": "PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+      "language": "Python",
+      "stars_today": "433",
+      "total_stars": "81,146",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR"
+    },
+    {
+      "name": "microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "stars_today": "216",
+      "total_stars": "48,605",
+      "url": "https://github.com/microsoft/VibeVoice"
+    },
+    {
+      "name": "khoj-ai/khoj",
+      "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+      "language": "Python",
+      "stars_today": "46",
+      "total_stars": "34,957",
+      "url": "https://github.com/khoj-ai/khoj"
+    },
+    {
+      "name": "666ghj/MiroFish",
+      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+      "language": "Python",
+      "stars_today": "493",
+      "total_stars": "65,131",
+      "url": "https://github.com/666ghj/MiroFish"
+    },
+    {
+      "name": "agentscope-ai/agentscope",
+      "description": "Build and run agents you can see, understand and trust.",
+      "language": "Python",
+      "stars_today": "84",
+      "total_stars": "26,379",
+      "url": "https://github.com/agentscope-ai/agentscope"
+    },
+    {
+      "name": "github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "language": "Python",
+      "stars_today": "398",
+      "total_stars": "109,755",
+      "url": "https://github.com/github/spec-kit"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "description": "A feature-rich command-line audio/video downloader",
+      "language": "Python",
+      "stars_today": "291",
+      "total_stars": "168,783",
+      "url": "https://github.com/yt-dlp/yt-dlp"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "language": "Python",
+      "stars_today": "206",
+      "total_stars": "113,613",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+    },
+    {
+      "name": "IBM/mcp-context-forge",
+      "description": "An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins.",
+      "language": "Python",
+      "stars_today": "3",
+      "total_stars": "3,835",
+      "url": "https://github.com/IBM/mcp-context-forge"
+    },
+    {
+      "name": "ansible/ansible",
+      "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.",
+      "language": "Python",
+      "stars_today": "14",
+      "total_stars": "68,793",
+      "url": "https://github.com/ansible/ansible"
+    },
+    {
+      "name": "cheahjs/free-llm-api-resources",
+      "description": "A list of free LLM inference resources accessible via API.",
+      "language": "Python",
+      "stars_today": "83",
+      "total_stars": "23,038",
+      "url": "https://github.com/cheahjs/free-llm-api-resources"
+    },
+    {
+      "name": "microsoft/BitNet",
+      "description": "Official inference framework for 1-bit LLMs",
+      "language": "Python",
+      "stars_today": "22",
+      "total_stars": "39,236",
+      "url": "https://github.com/microsoft/BitNet"
+    },
+    {
+      "name": "0x4m4/hexstrike-ai",
+      "description": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+      "language": "Python",
+      "stars_today": "46",
+      "total_stars": "9,390",
+      "url": "https://github.com/0x4m4/hexstrike-ai"
+    }
+  ]
+}

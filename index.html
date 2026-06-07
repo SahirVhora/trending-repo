@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Trending Dashboard</title>
+    <script>
+    (function() {
+        var stored = localStorage.getItem('theme');
+        if (stored === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+    </script>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface-hover: #1c2128;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79b8ff;
+            --success: #3fb950;
+            --danger: #f85149;
+            --warning: #d29922;
+        }
+        [data-theme="light"] {
+            --bg: #ffffff;
+            --surface: #f6f8fa;
+            --surface-hover: #eaeef2;
+            --border: #d0d7de;
+            --text: #1f2328;
+            --text-muted: #656d76;
+            --accent: #0969da;
+            --accent-hover: #0550ae;
+            --success: #1a7f37;
+            --danger: #cf222e;
+            --warning: #9a6700;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        nav {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 0 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+        nav .brand {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--text);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        nav .links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        nav .links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+            cursor: pointer;
+        }
+        nav .links a:hover, nav .links a.active {
+            color: var(--text);
+            border-bottom-color: var(--accent);
+        }
+        .theme-toggle {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            line-height: 1;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .theme-toggle:hover {
+            color: var(--text);
+            border-color: var(--accent);
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: var(--accent-hover); }
+        .btn-secondary {
+            background: var(--surface-hover);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        tr:hover td { background: var(--surface-hover); }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: var(--surface-hover);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        .stat-card .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-muted);
+        }
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .chart-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+        .chart-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+        }
+        .chart-wrapper {
+            position: relative;
+            height: 280px;
+        }
+        .load-data {
+            background: var(--surface-hover);
+            border: 1px dashed var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .load-data h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        .load-data p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+        .load-data textarea {
+            width: 100%;
+            min-height: 80px;
+            background: var(--bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.5rem;
+            font-family: monospace;
+            font-size: 0.8rem;
+            resize: vertical;
+        }
+        .hidden { display: none !important; }
+        @media (max-width: 768px) {
+            nav .nav-inner { flex-direction: column; height: auto; padding: 0.5rem 0; }
+            nav .links { gap: 1rem; }
+            main { padding: 1rem; }
+            th, td { padding: 0.5rem; font-size: 0.85rem; }
+            .card { padding: 1rem; }
+            .chart-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="brand" onclick="showView('dashboard');return false;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                Trending
+            </a>
+            <ul class="links">
+                <li><a onclick="showView('dashboard');return false;" id="navDashboard" class="active">Dashboard</a></li>
+                <li><a onclick="showView('load');return false;" id="navLoad">Load Data</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle between light and dark theme">🌙</button>
+        </div>
+    </nav>
+    <main>
+        <div id="view-dashboard">
+            <h1>🔥 GitHub Trending</h1>
+            <p style="color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem;" id="metaInfo">Data from 2026-06-07 (static snapshot — use Load Data tab to refresh)</p>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="value" id="statTotal">0</div>
+                    <div class="label">Repositories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" id="statLangs">0</div>
+                    <div class="label">Languages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="value" id="statTopStars">0</div>
+                    <div class="label">Top Stars</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+                        <input type="text" id="searchInput" placeholder="🔎 Search by repo name or description..." aria-label="Search repositories" style="background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:0.5rem 0.75rem;font-size:0.95rem;width:100%;max-width:400px;">
+                        <button class="btn btn-secondary" id="exportBtn" style="font-size:0.85rem;padding:0.45rem 0.75rem;">⬇️ Export CSV</button>
+                    </div>
+                </div>
+
+                <table id="repoTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="sort-header" data-col="1" style="cursor:pointer;user-select:none;">Repository <span class="sort-indicator"></span></th>
+                            <th class="sort-header" data-col="2" style="cursor:pointer;user-select:none;">Language <span class="sort-indicator"></span></th>
+                            <th class="sort-header" data-col="3" style="text-align:right;cursor:pointer;user-select:none;">Stars Today <span class="sort-indicator"></span></th>
+                            <th class="sort-header" data-col="4" style="text-align:right;cursor:pointer;user-select:none;">Total Stars <span class="sort-indicator"></span></th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="repoTableBody"></tbody>
+                </table>
+                <div id="paginationControls" style="display:flex;align-items:center;gap:0.75rem;margin-top:1rem;flex-wrap:wrap;">
+                    <button id="prevPage" class="btn btn-secondary" style="padding:0.35rem 0.75rem;font-size:0.85rem;" disabled>← Prev</button>
+                    <span id="pageIndicator" style="color:var(--text-muted);font-size:0.9rem;">Page 1 of 1</span>
+                    <button id="nextPage" class="btn btn-secondary" style="padding:0.35rem 0.75rem;font-size:0.85rem;" disabled>Next →</button>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--text-muted);font-size:0.85rem;">Total: <span id="repoCount">0</span> repositories</p>
+
+                <div class="chart-grid" id="chartGrid">
+                    <div class="chart-card">
+                        <h3>Languages</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="langChart" aria-label="Language distribution chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Top Starred Repos</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="starsChart" aria-label="Top starred repositories chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-load" class="hidden">
+            <h1>📥 Load Data</h1>
+            <div class="load-data">
+                <h3>Option 1: Paste JSON</h3>
+                <p>Paste the output from <code>python fetch_trending.py --json</code> or from a running server's <code>/api/fetch</code> endpoint.</p>
+                <textarea id="jsonInput" placeholder='[{"name":"owner/repo","description":"...","language":"Python","stars_today":"123","total_stars":"1,234","url":"https://github.com/owner/repo"}, ...]'></textarea>
+                <div style="margin-top:0.75rem;display:flex;gap:0.5rem;">
+                    <button class="btn" id="loadJsonBtn">Load JSON</button>
+                    <button class="btn btn-secondary" id="resetBtn">Reset to Default</button>
+                </div>
+                <p id="loadMsg" style="margin-top:0.5rem;font-size:0.85rem;min-height:1.2rem;"></p>
+            </div>
+            <div class="load-data">
+                <h3>Option 2: Fetch from Server</h3>
+                <p>If you have the Flask server running locally, click to fetch fresh data.</p>
+                <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                    <button class="btn" id="fetchLocalBtn">Fetch from localhost:5000</button>
+                </div>
+                <p id="fetchMsg" style="margin-top:0.5rem;font-size:0.85rem;min-height:1.2rem;"></p>
+            </div>
+            <div class="load-data">
+                <h3>How to Update This Page</h3>
+                <p style="margin-bottom:0.5rem;">This page includes a baked-in snapshot. To refresh:</p>
+                <ol style="margin-left:1.25rem;color:var(--text-muted);font-size:0.85rem;">
+                    <li>Run <code>python fetch_trending.py --json</code> in your terminal</li>
+                    <li>Copy the JSON output</li>
+                    <li>Switch to the <strong>Load Data</strong> tab and paste it</li>
+                    <li>Click <strong>Load JSON</strong></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script>
+    // ===== EMBEDDED DEFAULT DATA =====
+        var DEFAULT_REPOS = [
+      {"name": "mvanhorn/last30days-skill", "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary", "language": "Python", "stars_today": "1,097", "total_stars": "29,645", "url": "https://github.com/mvanhorn/last30days-skill"},
+      {"name": "opencv/opencv", "description": "Open Source Computer Vision Library", "language": "C++", "stars_today": "58", "total_stars": "87,904", "url": "https://github.com/opencv/opencv"},
+      {"name": "Leonxlnx/taste-skill", "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop", "language": "Shell", "stars_today": "1,104", "total_stars": "35,873", "url": "https://github.com/Leonxlnx/taste-skill"},
+      {"name": "NousResearch/hermes-agent", "description": "The agent that grows with you", "language": "Python", "stars_today": "1,117", "total_stars": "185,352", "url": "https://github.com/NousResearch/hermes-agent"},
+      {"name": "lfnovo/open-notebook", "description": "An Open Source implementation of Notebook LM with more flexibility and features", "language": "TypeScript", "stars_today": "555", "total_stars": "26,905", "url": "https://github.com/lfnovo/open-notebook"},
+      {"name": "yikart/AiToEarn", "description": "Let's use AI to Earn!", "language": "TypeScript", "stars_today": "180", "total_stars": "18,503", "url": "https://github.com/yikart/AiToEarn"},
+      {"name": "aaif-goose/goose", "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM", "language": "Rust", "stars_today": "262", "total_stars": "47,183", "url": "https://github.com/aaif-goose/goose"},
+      {"name": "Crosstalk-Solutions/project-nomad", "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.", "language": "TypeScript", "stars_today": "304", "total_stars": "29,458", "url": "https://github.com/Crosstalk-Solutions/project-nomad"},
+      {"name": "ggml-org/llama.cpp", "description": "LLM inference in C/C++", "language": "C++", "stars_today": "199", "total_stars": "115,103", "url": "https://github.com/ggml-org/llama.cpp"},
+      {"name": "RyanCodrai/turbovec", "description": "A vector index built on TurboQuant, written in Rust with Python bindings", "language": "Python", "stars_today": "1,533", "total_stars": "6,315", "url": "https://github.com/RyanCodrai/turbovec"},
+      {"name": "TapXWorld/ChinaTextbook", "description": "所有小初高、大学PDF教材。", "language": "Roff", "stars_today": "355", "total_stars": "72,303", "url": "https://github.com/TapXWorld/ChinaTextbook"},
+      {"name": "openai/plugins", "description": "OpenAI Plugins", "language": "JavaScript", "stars_today": "262", "total_stars": "1,912", "url": "https://github.com/openai/plugins"},
+      {"name": "refactoringhq/tolaria", "description": "Desktop app to manage markdown knowledge bases", "language": "TypeScript", "stars_today": "242", "total_stars": "12,616", "url": "https://github.com/refactoringhq/tolaria"},
+      {"name": "HunxByts/GhostTrack", "description": "Useful tool to track location or mobile number", "language": "Python", "stars_today": "21", "total_stars": "13,587", "url": "https://github.com/HunxByts/GhostTrack"},
+      {"name": "microsoft/pg_durable", "description": "PostgreSQL in-database durable execution", "language": "Rust", "stars_today": "314", "total_stars": "1,288", "url": "https://github.com/microsoft/pg_durable"},
+    ];
+
+    var repos = DEFAULT_REPOS.slice();
+    var charts = {};
+
+    // ===== THEME =====
+    (function() {
+        var html = document.documentElement;
+        var btn = document.getElementById('themeToggle');
+        function apply(theme) {
+            if (theme === 'light') { html.setAttribute('data-theme', 'light'); if (btn) btn.textContent = '☀️'; }
+            else { html.removeAttribute('data-theme'); if (btn) btn.textContent = '🌙'; }
+        }
+        apply(localStorage.getItem('theme') || 'dark');
+        if (btn) btn.addEventListener('click', function() {
+            var next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme', next);
+            apply(next);
+            window.location.reload();
+        });
+    })();
+
+    // ===== NAVIGATION =====
+    function showView(name) {
+        document.getElementById('view-dashboard').classList.toggle('hidden', name !== 'dashboard');
+        document.getElementById('view-load').classList.toggle('hidden', name !== 'load');
+        document.getElementById('navDashboard').classList.toggle('active', name === 'dashboard');
+        document.getElementById('navLoad').classList.toggle('active', name === 'load');
+    }
+
+    // ===== RENDER TABLE =====
+    function parseStars(s) {
+        if (!s) return 0;
+        var n = parseInt(String(s).replace(/,/g, ''), 10);
+        return isNaN(n) ? 0 : n;
+    }
+
+    function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function escapeAttr(text) {
+        return String(text).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function renderTable() {
+        var tbody = document.getElementById('repoTableBody');
+        tbody.innerHTML = '';
+        repos.forEach(function(r, i) {
+            var tr = document.createElement('tr');
+            var tdRank = document.createElement('td');
+            tdRank.style.cssText = 'color:var(--text-muted);font-weight:600;';
+            tdRank.textContent = i + 1;
+
+            var tdName = document.createElement('td');
+            var a = document.createElement('a');
+            a.href = r.url;
+            a.target = '_blank';
+            a.textContent = r.name;
+            tdName.appendChild(a);
+
+            var tdLang = document.createElement('td');
+            var badge = document.createElement('span');
+            badge.className = 'badge';
+            badge.textContent = r.language || 'Unknown';
+            tdLang.appendChild(badge);
+
+            var tdStarsToday = document.createElement('td');
+            tdStarsToday.style.cssText = 'text-align:right;color:var(--success);font-weight:600;';
+            tdStarsToday.setAttribute('data-sort', r.stars_today);
+            tdStarsToday.textContent = r.stars_today;
+
+            var tdTotal = document.createElement('td');
+            tdTotal.style.cssText = 'text-align:right;font-weight:600;';
+            tdTotal.setAttribute('data-sort', r.total_stars);
+            tdTotal.textContent = r.total_stars;
+
+            var tdDesc = document.createElement('td');
+            tdDesc.style.cssText = 'color:var(--text-muted);max-width:400px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;';
+            tdDesc.textContent = r.description;
+
+            tr.appendChild(tdRank);
+            tr.appendChild(tdName);
+            tr.appendChild(tdLang);
+            tr.appendChild(tdStarsToday);
+            tr.appendChild(tdTotal);
+            tr.appendChild(tdDesc);
+            tbody.appendChild(tr);
+        });
+    }
+
+    // ===== STATS =====
+    function updateStats() {
+        var langs = {};
+        var maxStars = 0;
+        repos.forEach(function(r) {
+            var lang = r.language || 'Unknown';
+            langs[lang] = (langs[lang] || 0) + 1;
+            var s = parseStars(r.total_stars);
+            if (s > maxStars) maxStars = s;
+        });
+        document.getElementById('statTotal').textContent = repos.length;
+        document.getElementById('statLangs').textContent = Object.keys(langs).length;
+        document.getElementById('statTopStars').textContent = maxStars.toLocaleString();
+    }
+
+    // ===== PAGINATION =====
+    function initPagination() {
+        var input = document.getElementById('searchInput');
+        var table = document.getElementById('repoTable');
+        var countSpan = document.getElementById('repoCount');
+        var prevBtn = document.getElementById('prevPage');
+        var nextBtn = document.getElementById('nextPage');
+        var pageIndicator = document.getElementById('pageIndicator');
+        var PAGE_SIZE = 10;
+        var currentPage = 1;
+
+        if (!table) return;
+
+        function getAllRows() {
+            return Array.from(table.querySelectorAll('tbody tr'));
+        }
+
+        function getFilteredRows() {
+            var term = input ? input.value.toLowerCase() : '';
+            return getAllRows().filter(function(row) {
+                if (!term) return true;
+                var name = row.cells[1].textContent.toLowerCase();
+                var desc = row.cells[5].textContent.toLowerCase();
+                return name.indexOf(term) !== -1 || desc.indexOf(term) !== -1;
+            });
+        }
+
+        function render() {
+            var filtered = getFilteredRows();
+            var totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+            if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+            if (currentPage < 1) currentPage = 1;
+
+            getAllRows().forEach(function(row) { row.style.display = 'none'; });
+            var start = (currentPage - 1) * PAGE_SIZE;
+            var end = start + PAGE_SIZE;
+            var pageRows = filtered.slice(start, end);
+            pageRows.forEach(function(row) { row.style.display = ''; });
+
+            if (countSpan) countSpan.textContent = filtered.length;
+            var controls = document.getElementById('paginationControls');
+            if (filtered.length === 0) {
+                if (controls) controls.style.display = 'none';
+            } else {
+                if (controls) controls.style.display = 'flex';
+                if (pageIndicator) pageIndicator.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+                if (prevBtn) prevBtn.disabled = currentPage <= 1;
+                if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+            }
+        }
+
+        if (input) input.addEventListener('input', function() { currentPage = 1; render(); });
+        if (prevBtn) prevBtn.addEventListener('click', function() { currentPage--; render(); });
+        if (nextBtn) nextBtn.addEventListener('click', function() { currentPage++; render(); });
+
+        render();
+    }
+
+    // ===== SORT =====
+    function initSort() {
+        var table = document.getElementById('repoTable');
+        if (!table) return;
+        var headers = table.querySelectorAll('th.sort-header');
+        var currentSort = { col: -1, dir: 1 };
+
+        function parseVal(row, col) {
+            var cell = row.cells[col];
+            var attr = cell.getAttribute('data-sort');
+            if (attr !== null) {
+                var n = parseInt(attr.replace(/,/g, ''), 10);
+                return isNaN(n) ? attr.toLowerCase() : n;
+            }
+            return cell.textContent.trim().toLowerCase();
+        }
+
+        headers.forEach(function(th) {
+            th.addEventListener('click', function() {
+                var col = parseInt(th.getAttribute('data-col'), 10);
+                if (currentSort.col === col) {
+                    currentSort.dir *= -1;
+                } else {
+                    currentSort.col = col;
+                    currentSort.dir = 1;
+                }
+
+                headers.forEach(function(h) {
+                    var ind = h.querySelector('.sort-indicator');
+                    if (ind) ind.textContent = '';
+                });
+                var ind = th.querySelector('.sort-indicator');
+                if (ind) ind.textContent = currentSort.dir === 1 ? ' ▲' : ' ▼';
+
+                var tbody = table.querySelector('tbody');
+                var rows = Array.from(tbody.querySelectorAll('tr'));
+                rows.sort(function(a, b) {
+                    var av = parseVal(a, col);
+                    var bv = parseVal(b, col);
+                    if (av < bv) return -1 * currentSort.dir;
+                    if (av > bv) return 1 * currentSort.dir;
+                    return 0;
+                });
+                rows.forEach(function(row) { tbody.appendChild(row); });
+
+                var input = document.getElementById('searchInput');
+                if (input) input.dispatchEvent(new Event('input'));
+            });
+        });
+    }
+
+    // ===== CHARTS =====
+    function renderCharts() {
+        var grid = document.getElementById('chartGrid');
+        if (typeof Chart === 'undefined') {
+            if (grid) grid.style.display = 'none';
+            return;
+        }
+        if (grid) grid.style.display = 'grid';
+        if (!repos || !repos.length) return;
+
+        var textMuted = getComputedStyle(document.body).getPropertyValue('--text-muted').trim();
+        var chartBorder = getComputedStyle(document.body).getPropertyValue('--border').trim();
+
+        // Language doughnut
+        var langCounts = {};
+        repos.forEach(function(r) {
+            var lang = r.language || 'Unknown';
+            langCounts[lang] = (langCounts[lang] || 0) + 1;
+        });
+        var langLabels = Object.keys(langCounts);
+        var langData = Object.values(langCounts);
+        var langPalette = ['#58a6ff','#3fb950','#d29922','#f85149','#a371f7','#56d4dd','#fa7f34','#79c0ff','#7ee787','#ffd54f','#ff7b72','#d2a8ff'];
+        var langColors = langLabels.map(function(_, i) { return langPalette[i % langPalette.length]; });
+
+        if (charts.lang) charts.lang.destroy();
+        charts.lang = new Chart(document.getElementById('langChart'), {
+            type: 'doughnut',
+            data: {
+                labels: langLabels,
+                datasets: [{
+                    data: langData,
+                    backgroundColor: langColors,
+                    borderColor: chartBorder,
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: textMuted, padding: 16 } }
+                }
+            }
+        });
+
+        // Top stars bar
+        var sorted = repos.slice().sort(function(a, b) {
+            return parseStars(b.total_stars) - parseStars(a.total_stars);
+        }).slice(0, 10);
+
+        if (charts.stars) charts.stars.destroy();
+        charts.stars = new Chart(document.getElementById('starsChart'), {
+            type: 'bar',
+            data: {
+                labels: sorted.map(function(r) { return r.name; }),
+                datasets: [{
+                    label: 'Total Stars',
+                    data: sorted.map(function(r) { return parseStars(r.total_stars); }),
+                    backgroundColor: '#58a6ff',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { color: textMuted, maxRotation: 45, minRotation: 45 }, grid: { color: chartBorder } },
+                    y: { ticks: { color: textMuted }, grid: { color: chartBorder } }
+                }
+            }
+        });
+    }
+
+    // ===== EXPORT CSV =====
+    document.getElementById('exportBtn').addEventListener('click', function() {
+        var rows = [['Rank','Name','Language','Stars Today','Total Stars','Description','URL']];
+        repos.forEach(function(r, i) {
+            rows.push([i+1, r.name, r.language, r.stars_today, r.total_stars, r.description, r.url]);
+        });
+        var csv = rows.map(function(row) {
+            return row.map(function(cell) {
+                var s = String(cell).replace(/"/g, '""');
+                // Prevent CSV formula injection in Excel
+                if (/^[+=\-@\t]/.test(s)) s = "'" + s;
+                if (s.indexOf(',') !== -1 || s.indexOf('"') !== -1 || s.indexOf('\n') !== -1) {
+                    s = '"' + s + '"';
+                }
+                return s;
+            }).join(',');
+        }).join('\n');
+        var blob = new Blob([csv], { type: 'text/csv' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'trending_repos.csv';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+
+    // ===== LOAD DATA =====
+    document.getElementById('loadJsonBtn').addEventListener('click', function() {
+        var raw = document.getElementById('jsonInput').value.trim();
+        var msg = document.getElementById('loadMsg');
+        if (!raw) { msg.textContent = 'Please paste JSON first.'; msg.style.color = 'var(--danger)'; return; }
+        try {
+            var data = JSON.parse(raw);
+            if (!Array.isArray(data)) {
+                // Support snapshot format { repositories: [...] }
+                if (data.repositories && Array.isArray(data.repositories)) {
+                    data = data.repositories;
+                } else {
+                    throw new Error('Expected an array or object with repositories key');
+                }
+            }
+            if (!data.length) { msg.textContent = 'No repositories found in JSON.'; msg.style.color = 'var(--danger)'; return; }
+            repos = data;
+            refreshAll();
+            msg.textContent = 'Loaded ' + repos.length + ' repositories! Switching to Dashboard...';
+            msg.style.color = 'var(--success)';
+            setTimeout(function() { showView('dashboard'); }, 800);
+        } catch(e) {
+            msg.textContent = 'Error: ' + e.message;
+            msg.style.color = 'var(--danger)';
+        }
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', function() {
+        repos = DEFAULT_REPOS.slice();
+        refreshAll();
+        document.getElementById('loadMsg').textContent = 'Reset to default snapshot.';
+        document.getElementById('loadMsg').style.color = 'var(--success)';
+    });
+
+    document.getElementById('fetchLocalBtn').addEventListener('click', function() {
+        var msg = document.getElementById('fetchMsg');
+        msg.textContent = 'Fetching...';
+        msg.style.color = 'var(--text-muted)';
+        fetch('http://localhost:5000/api/fetch')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (Array.isArray(data) && data.length) {
+                    repos = data;
+                    refreshAll();
+                    msg.textContent = 'Loaded ' + repos.length + ' repos from localhost!';
+                    msg.style.color = 'var(--success)';
+                    setTimeout(function() { showView('dashboard'); }, 800);
+                } else {
+                    msg.textContent = 'No data returned from server.';
+                    msg.style.color = 'var(--danger)';
+                }
+            })
+            .catch(function(e) {
+                msg.textContent = 'Could not connect to localhost:5000. Make sure the Flask server is running.';
+                msg.style.color = 'var(--danger)';
+            });
+    });
+
+    function refreshAll() {
+        renderTable();
+        updateStats();
+        initPagination();
+        initSort();
+        renderCharts();
+        var meta = document.getElementById('metaInfo');
+        if (meta) meta.textContent = 'Showing ' + repos.length + ' repositories — Data from 2026-06-07 (static snapshot; use Load Data tab to refresh)';
+    }
+
+    // ===== INIT =====
+    refreshAll();
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Reports - GitHub Trending{% endblock %}
+{% block content %}
+<h1>📄 Reports</h1>
+
+<div class="card">
+    {% if reports %}
+    <table>
+        <thead>
+            <tr><th>Report</th><th>Date</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+            {% for r in reports %}
+            <tr>
+                <td>{{ r.filename }}</td>
+                <td>{{ r.date }}</td>
+                <td>
+                    <a href="/report/{{ r.filename }}" class="btn" style="padding:0.3rem 0.6rem;font-size:0.8rem;">View</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div class="empty-state">
+        <p>No reports generated yet.</p>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">Run the daily cron job or <code>--trend --markdown --output</code> to generate reports.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

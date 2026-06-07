@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ filename }} - GitHub Trending{% endblock %}
+{% block content %}
+<h1>📄 {{ filename }}</h1>
+
+<div class="card">
+    <div style="line-height: 1.7; color: var(--text);">
+        {{ content|safe }}
+    </div>
+</div>
+
+<div style="margin-top: 1.5rem;">
+    <a href="/reports" class="btn btn-secondary">← Back to Reports</a>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}{{ repo.name if repo else 'Not Found' }} - GitHub Trending{% endblock %}
+{% block content %}
+{% if error %}
+<div class="card" style="border-color:var(--danger);">
+    <p style="color:var(--danger);">{{ error }}</p>
+    <a href="/" class="btn btn-secondary" style="margin-top:1rem;">← Back to Dashboard</a>
+</div>
+{% else %}
+<div class="card">
+    <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;">
+        <div style="flex:1;min-width:260px;">
+            <h1 style="font-size:1.5rem;margin-bottom:0.5rem;">
+                <a href="{{ repo.url }}" target="_blank" style="color:var(--text);">{{ repo.name }}</a>
+            </h1>
+            <p style="color:var(--text-muted);margin-bottom:1rem;">{{ repo.description }}</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;">
+                <span class="badge" style="font-size:0.9rem;">{{ repo.language }}</span>
+                <span style="color:var(--text-muted);font-size:0.9rem;">🏆 Rank #{{ rank }} of {{ total }}</span>
+                <span style="color:var(--success);font-size:0.9rem;font-weight:600;">⭐ {{ repo.total_stars }}</span>
+                <span style="color:var(--accent);font-size:0.9rem;font-weight:600;">+{{ repo.stars_today }} today</span>
+            </div>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+                <a href="{{ repo.url }}" target="_blank" class="btn">Open on GitHub →</a>
+                <a href="/" class="btn btn-secondary">← Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
