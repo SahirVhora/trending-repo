@@ -1,6 +1,6 @@
-# 🔥 GitHub Trending Dashboard
+# 🔥 GitHub Trending Dashboard — Daily Trending Repositories & Analytics
 
-A beautiful, interactive dashboard for exploring GitHub's trending repositories. Features dark/light themes, live search, column sorting, pagination, charts, CSV export, and snapshot comparison — all in a clean web UI.
+A beautiful, interactive dashboard for exploring [GitHub's trending repositories](https://sahirvhora.github.io/trending-repo/). Track top starred open-source projects daily, weekly, or monthly with live search, sortable columns, interactive charts, CSV export, dark/light themes, and snapshot comparison — all in a clean web UI.
 
 ![GitHub Trending Dashboard](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -17,6 +17,7 @@ A beautiful, interactive dashboard for exploring GitHub's trending repositories.
 - **CSV Export** — Download the current view as a CSV file
 - **Standalone HTML** — `index.html` works in any browser with zero setup
 - **Flask API** — JSON endpoints for programmatic access
+- **SEO Optimized** — Meta tags, structured data, sitemap, and Open Graph for social sharing
 
 ---
 
@@ -113,7 +114,7 @@ Add to your crontab to auto-fetch and compare daily:
 
 ## 🌐 GitHub Pages (Share with Anyone)
 
-Once you push this repo to GitHub, enable GitHub Pages so anyone can view the dashboard in their browser:
+Once you push this repo to GitHub, enable GitHub Pages so anyone can view the dashboard in their browser at [https://sahirvhora.github.io/trending-repo/](https://sahirvhora.github.io/trending-repo/):
 
 1. Go to your repo on GitHub → **Settings** → **Pages**
 2. Under **Source**, select **Deploy from a branch**
