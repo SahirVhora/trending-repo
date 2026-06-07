@@ -464,9 +464,7 @@
     // ===== NAVIGATION =====
     function showView(name) {
         document.getElementById('view-dashboard').classList.toggle('hidden', name !== 'dashboard');
-        document.getElementById('view-load').classList.toggle('hidden', name !== 'load');
         document.getElementById('navDashboard').classList.toggle('active', name === 'dashboard');
-        document.getElementById('navLoad').classList.toggle('active', name === 'load');
     }
 
     // ===== RENDER TABLE =====
@@ -758,64 +756,7 @@
         URL.revokeObjectURL(url);
     });
 
-    // ===== LOAD DATA =====
-    document.getElementById('loadJsonBtn').addEventListener('click', function() {
-        var raw = document.getElementById('jsonInput').value.trim();
-        var msg = document.getElementById('loadMsg');
-        if (!raw) { msg.textContent = 'Please paste JSON first.'; msg.style.color = 'var(--danger)'; return; }
-        try {
-            var data = JSON.parse(raw);
-            if (!Array.isArray(data)) {
-                // Support snapshot format { repositories: [...] }
-                if (data.repositories && Array.isArray(data.repositories)) {
-                    data = data.repositories;
-                } else {
-                    throw new Error('Expected an array or object with repositories key');
-                }
-            }
-            if (!data.length) { msg.textContent = 'No repositories found in JSON.'; msg.style.color = 'var(--danger)'; return; }
-            repos = data;
-            refreshAll();
-            msg.textContent = 'Loaded ' + repos.length + ' repositories! Switching to Dashboard...';
-            msg.style.color = 'var(--success)';
-            setTimeout(function() { showView('dashboard'); }, 800);
-        } catch(e) {
-            msg.textContent = 'Error: ' + e.message;
-            msg.style.color = 'var(--danger)';
-        }
-    });
-
-    document.getElementById('resetBtn').addEventListener('click', function() {
-        repos = DEFAULT_REPOS.slice();
-        refreshAll();
-        document.getElementById('loadMsg').textContent = 'Reset to default snapshot.';
-        document.getElementById('loadMsg').style.color = 'var(--success)';
-    });
-
-    document.getElementById('fetchLocalBtn').addEventListener('click', function() {
-        var msg = document.getElementById('fetchMsg');
-        msg.textContent = 'Fetching...';
-        msg.style.color = 'var(--text-muted)';
-        fetch('http://localhost:5000/api/fetch')
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                if (Array.isArray(data) && data.length) {
-                    repos = data;
-                    refreshAll();
-                    msg.textContent = 'Loaded ' + repos.length + ' repos from localhost!';
-                    msg.style.color = 'var(--success)';
-                    setTimeout(function() { showView('dashboard'); }, 800);
-                } else {
-                    msg.textContent = 'No data returned from server.';
-                    msg.style.color = 'var(--danger)';
-                }
-            })
-            .catch(function(e) {
-                msg.textContent = 'Could not connect to localhost:5000. Make sure the Flask server is running.';
-                msg.style.color = 'var(--danger)';
-            });
-    });
-
+    // ===== REFRESH ALL =====
     function refreshAll() {
         renderTable();
         updateStats();
