@@ -344,7 +344,6 @@
             </a>
             <ul class="links" role="menubar">
                 <li role="none"><a role="menuitem" onclick="showView('dashboard');return false;" id="navDashboard" class="active">Dashboard</a></li>
-                <li role="none"><a role="menuitem" onclick="showView('load');return false;" id="navLoad">Load Data</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle between light and dark theme">🌙</button>
         </div>
@@ -353,7 +352,7 @@
     <main>
         <div id="view-dashboard">
             <h1>🔥 GitHub Trending Repositories</h1>
-            <p style="color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem;" id="metaInfo">Data from 2026-06-07 (static snapshot - use Load Data tab to refresh)</p>
+            <p style="color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem;" id="metaInfo">Data from 2026-06-07 (auto-updated every 3 hours via GitHub Actions)</p>
 
             <div class="stats">
                 <div class="stat-card">
@@ -415,37 +414,6 @@
             </div>
         </div>
 
-        <section id="view-load" class="hidden" aria-label="Load data">
-            <h1>📥 Load Data</h1>
-            <div class="load-data">
-                <h3>Option 1: Paste JSON</h3>
-                <p>Paste the output from <code>python fetch_trending.py --json</code> or from a running server's <code>/api/fetch</code> endpoint.</p>
-                <textarea id="jsonInput" placeholder='[{"name":"owner/repo","description":"...","language":"Python","stars_today":"123","total_stars":"1,234","url":"https://github.com/owner/repo"}, ...]'></textarea>
-                <div style="margin-top:0.75rem;display:flex;gap:0.5rem;">
-                    <button class="btn" id="loadJsonBtn">Load JSON</button>
-                    <button class="btn btn-secondary" id="resetBtn">Reset to Default</button>
-                </div>
-                <p id="loadMsg" style="margin-top:0.5rem;font-size:0.85rem;min-height:1.2rem;"></p>
-            </div>
-            <div class="load-data">
-                <h3>Option 2: Fetch from Server</h3>
-                <p>If you have the Flask server running locally, click to fetch fresh data.</p>
-                <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-                    <button class="btn" id="fetchLocalBtn">Fetch from localhost:5000</button>
-                </div>
-                <p id="fetchMsg" style="margin-top:0.5rem;font-size:0.85rem;min-height:1.2rem;"></p>
-            </div>
-            <div class="load-data">
-                <h3>How to Update This Page</h3>
-                <p style="margin-bottom:0.5rem;">This page includes a baked-in snapshot. To refresh:</p>
-                <ol style="margin-left:1.25rem;color:var(--text-muted);font-size:0.85rem;">
-                    <li>Run <code>python fetch_trending.py --json</code> in your terminal</li>
-                    <li>Copy the JSON output</li>
-                    <li>Switch to the <strong>Load Data</strong> tab and paste it</li>
-                    <li>Click <strong>Load JSON</strong></li>
-                </ol>
-            </div>
-        </section>
     </main>
     <footer style="text-align:center;padding:1.5rem;color:var(--text-muted);font-size:0.85rem;border-top:1px solid var(--border);margin-top:2rem;">
         <p>GitHub Trending Dashboard - Built by <a href="https://github.com/SahirVhora" target="_blank" rel="noopener noreferrer">Sahir Vhora</a></p>
@@ -855,7 +823,7 @@
         initSort();
         renderCharts();
         var meta = document.getElementById('metaInfo');
-        if (meta) meta.textContent = 'Showing ' + repos.length + ' repositories - Data from 2026-06-07 (static snapshot; use Load Data tab to refresh)';
+        if (meta) meta.textContent = 'Showing ' + repos.length + ' repositories - Data from 2026-06-07 (auto-updated every 3 hours)';
     }
 
     // ===== INIT =====
