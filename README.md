@@ -1,6 +1,6 @@
-# 🔥 GitHub Trending Dashboard — Daily Trending Repositories & Analytics
+# 🔥 GitHub Trending Dashboard - Daily Trending Repositories & Analytics
 
-A beautiful, interactive dashboard for exploring [GitHub's trending repositories](https://sahirvhora.github.io/trending-repo/). Track top starred open-source projects daily, weekly, or monthly with live search, sortable columns, interactive charts, CSV export, dark/light themes, and snapshot comparison — all in a clean web UI.
+A beautiful, interactive dashboard for exploring [GitHub's trending repositories](https://sahirvhora.github.io/trending-repo/). Track top starred open-source projects daily, weekly, or monthly with live search, sortable columns, interactive charts, CSV export, dark/light themes, and snapshot comparison - all in a clean web UI.
 
 ![GitHub Trending Dashboard](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -9,15 +9,15 @@ A beautiful, interactive dashboard for exploring [GitHub's trending repositories
 
 ## ✨ Features
 
-- **Real-time Scraping** — Fetches today's trending repos directly from GitHub
-- **Interactive Dashboard** — Search, sort, paginate through repos with live charts
-- **Dark / Light Theme** — Toggle between themes with localStorage persistence
-- **Snapshot System** — Save daily JSON snapshots and compare them over time
-- **Trend Analysis** — See which repos entered, left, or stayed in trending
-- **CSV Export** — Download the current view as a CSV file
-- **Standalone HTML** — `index.html` works in any browser with zero setup
-- **Flask API** — JSON endpoints for programmatic access
-- **SEO Optimized** — Meta tags, structured data, sitemap, and Open Graph for social sharing
+- **Real-time Scraping** - Fetches today's trending repos directly from GitHub
+- **Interactive Dashboard** - Search, sort, paginate through repos with live charts
+- **Dark / Light Theme** - Toggle between themes with localStorage persistence
+- **Snapshot System** - Save daily JSON snapshots and compare them over time
+- **Trend Analysis** - See which repos entered, left, or stayed in trending
+- **CSV Export** - Download the current view as a CSV file
+- **Standalone HTML** - `index.html` works in any browser with zero setup
+- **Flask API** - JSON endpoints for programmatic access
+- **SEO Optimized** - Meta tags, structured data, sitemap, and Open Graph for social sharing
 
 ---
 
@@ -26,11 +26,11 @@ A beautiful, interactive dashboard for exploring [GitHub's trending repositories
 ### Option 1: Single HTML File (Zero Setup)
 
 1. Open [`index.html`](index.html) in any modern browser
-2. The latest snapshot is already baked in — no server needed!
+2. The latest snapshot is already baked in - no server needed!
 3. To refresh data, switch to the **Load Data** tab and paste JSON from the Python script
 
 > 💡 **For non-technical users:** Just double-click `index.html`. It works offline.  
-> 🌐 **Or enable GitHub Pages** (see below) and share the URL — no downloads needed!
+> 🌐 **Or enable GitHub Pages** (see below) and share the URL - no downloads needed!
 
 ### Option 2: Flask Server (Full Features)
 
@@ -152,7 +152,7 @@ FLASK_DEBUG=1 python app.py
 
 ## 📄 License
 
-MIT License — feel free to use, modify, and share!
+MIT License - feel free to use, modify, and share!
 
 ---
 

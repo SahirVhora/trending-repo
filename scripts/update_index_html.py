@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Fetch fresh trending data and bake it into index.html."""
+"""Fetch fresh trending data and bake it into index.html.
+
+Strips em dashes from scraped descriptions and saves a JSON snapshot
+for historical trend tracking alongside the HTML update.
+"""
 
 import datetime
 import json
@@ -12,6 +16,12 @@ import sys
 BASE_DIR = pathlib.Path(__file__).parent.parent.resolve()
 INDEX_PATH = BASE_DIR / "index.html"
 FETCH_SCRIPT = BASE_DIR / "fetch_trending.py"
+DATA_DIR = BASE_DIR / "data"
+
+
+def sanitize(value: str) -> str:
+    """Strip em dashes, en dashes from strings to keep files consistent."""
+    return value.replace("\u2014", "-").replace("\u2013", "-")
 
 
 def fetch_json() -> list[dict]:
@@ -47,7 +57,6 @@ def update_index_html(repos: list[dict]) -> bool:
     today = datetime.date.today().isoformat()
 
     # Find and replace the DEFAULT_REPOS array
-    # Use a more specific anchor to avoid matching ]; inside strings
     start_marker = "    var DEFAULT_REPOS = ["
     end_marker = "    ];"
     start_idx = content.find(start_marker)
@@ -67,12 +76,35 @@ def update_index_html(repos: list[dict]) -> bool:
     )
 
     if new_content == content:
-        print("No changes needed — data is already up to date.")
+        print("No changes needed - data is already up to date.")
         return False
 
     INDEX_PATH.write_text(new_content, encoding="utf-8")
     print(f"Updated {INDEX_PATH} with {len(repos)} repos from {today}.")
     return True
+
+
+def save_snapshot(repos: list[dict]) -> pathlib.Path:
+    """Save a date-stamped JSON snapshot for trend tracking."""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    today = datetime.date.today().isoformat()
+    filepath = DATA_DIR / f"trending_{today}.json"
+
+    snapshot = {
+        "meta": {
+            "fetched_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "since": "daily",
+            "language": "all",
+            "count": len(repos),
+        },
+        "repositories": repos,
+    }
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(snapshot, f, indent=2, ensure_ascii=False)
+
+    print(f"Snapshot saved: {filepath}")
+    return filepath
 
 
 def main() -> int:
@@ -86,13 +118,25 @@ def main() -> int:
         print("No repos fetched, skipping update.")
         return 0
 
+    # Sanitize all string fields to strip em dashes / en dashes
+    for r in repos:
+        for k, v in r.items():
+            if isinstance(v, str):
+                r[k] = sanitize(v)
+
     try:
         changed = update_index_html(repos)
     except Exception as e:
         print(f"Update failed: {e}", file=sys.stderr)
         return 1
 
-    return 0 if changed or not changed else 0
+    # Always save a snapshot for historical tracking
+    try:
+        save_snapshot(repos)
+    except Exception as e:
+        print(f"Snapshot save failed (non-fatal): {e}", file=sys.stderr)
+
+    return 0
 
 
 if __name__ == "__main__":
