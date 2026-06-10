@@ -38,6 +38,7 @@
                 <th class="sort-header" data-col="2" style="cursor:pointer;user-select:none;">Language <span class="sort-indicator"></span></th>
                 <th class="sort-header" data-col="3" style="text-align:right;cursor:pointer;user-select:none;">Stars Today <span class="sort-indicator"></span></th>
                 <th class="sort-header" data-col="4" style="text-align:right;cursor:pointer;user-select:none;">Total Stars <span class="sort-indicator"></span></th>
+                <th class="sort-header" data-col="5" style="cursor:pointer;user-select:none;">Fit for Sahir <span class="sort-indicator"></span></th>
                 <th>Description</th>
             </tr>
         </thead>
@@ -51,6 +52,10 @@
                 <td><span class="badge">{{ r.language }}</span></td>
                 <td style="text-align:right;color:var(--success);font-weight:600;" data-sort="{{ r.stars_today }}">{{ r.stars_today }}</td>
                 <td style="text-align:right;font-weight:600;" data-sort="{{ r.total_stars }}">{{ r.total_stars }}</td>
+                <td data-sort="{{ r.fit_for_sahir.score if r.fit_for_sahir else 0 }}">
+                    <span class="badge">{{ r.fit_for_sahir.lane if r.fit_for_sahir else 'ignore' }}</span>
+                    <span style="color:var(--text-muted);font-size:0.8rem;">{{ r.fit_for_sahir.score if r.fit_for_sahir else 0 }}</span>
+                </td>
                 <td style="color:var(--text-muted);max-width:400px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ r.description }}</td>
             </tr>
             {% endfor %}
@@ -180,7 +185,7 @@
         return getAllRows().filter(function(row) {
             if (!term) return true;
             var name = row.cells[1].textContent.toLowerCase();
-            var desc = row.cells[5].textContent.toLowerCase();
+            var desc = row.cells[6].textContent.toLowerCase();
             return name.indexOf(term) !== -1 || desc.indexOf(term) !== -1;
         });
     }

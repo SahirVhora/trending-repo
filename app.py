@@ -33,6 +33,55 @@ _CACHE: dict[str, tuple[list[dict], float]] = {}
 _CACHE_TTL = 900  # 15 minutes
 
 
+
+SAHIR_FIT_LANES = {
+    "hermes-agent": ["agent", "agents", "automation", "browser", "workflow", "cli", "llm", "mcp", "ai"],
+    "sap": ["sap", "successfactors", "odata", "erp", "hr", "employee", "workflow"],
+    "education": ["education", "learning", "quiz", "worksheet", "school", "tutor", "practice", "curriculum"],
+    "property": ["property", "mortgage", "house", "home", "real estate", "map", "planning", "solihull"],
+    "document-tools": ["pdf", "document", "ocr", "forms", "invoice", "scan", "parser", "extraction"],
+}
+
+SAHIR_FIT_LANGUAGE_BOOSTS = {
+    "python": 10,
+    "javascript": 8,
+    "typescript": 8,
+    "html": 6,
+    "shell": 5,
+}
+
+
+def _sahir_fit(repo: dict) -> dict[str, Any]:
+    """Rank a repo against Sahir's active build lanes."""
+    text = " ".join([
+        repo.get("name", ""),
+        repo.get("description", ""),
+        repo.get("language", ""),
+    ]).lower()
+    lane_scores: dict[str, int] = {}
+    for lane, words in SAHIR_FIT_LANES.items():
+        lane_scores[lane] = sum(18 for word in words if word in text)
+    language = str(repo.get("language", "")).lower()
+    language_boost = SAHIR_FIT_LANGUAGE_BOOSTS.get(language, 0)
+    star_boost = min(20, _parse_stars(repo.get("stars_today", "0")) // 50)
+    lane, lane_score = max(lane_scores.items(), key=lambda item: item[1])
+    score = min(100, lane_score + language_boost + star_boost)
+    if score < 20:
+        lane = "ignore"
+    priority = "high" if score >= 70 else "medium" if score >= 40 else "low" if score >= 20 else "ignore"
+    return {"score": score, "lane": lane, "priority": priority}
+
+
+def _add_sahir_fit(repos: list[dict]) -> list[dict]:
+    """Return repos with fit_for_sahir metadata attached."""
+    enriched = []
+    for repo in repos:
+        copy = dict(repo)
+        copy["fit_for_sahir"] = _sahir_fit(copy)
+        enriched.append(copy)
+    return enriched
+
+
 def _get_trending_cached(since: str, language: str) -> list[dict]:
     """Fetch trending repos with a 15-minute in-memory cache."""
     key = f"{since}:{language}"
@@ -41,7 +90,7 @@ def _get_trending_cached(since: str, language: str) -> list[dict]:
         repos, ts = _CACHE[key]
         if now - ts < _CACHE_TTL:
             return list(repos)
-    repos = fetch_trending(since=since, language=language)
+    repos = _add_sahir_fit(fetch_trending(since=since, language=language))
     _CACHE[key] = (repos, now)
     return list(repos)
 
@@ -391,7 +440,7 @@ def api_export_csv():
         return jsonify({"error": str(e)}), 503
     output = io.StringIO()
     writer = csv.writer(output)
-    writer.writerow(["Rank", "Name", "Language", "Stars Today", "Total Stars", "Description", "URL"])
+    writer.writerow(["Rank", "Name", "Language", "Stars Today", "Total Stars", "Fit Lane", "Fit Score", "Fit Priority", "Description", "URL"])
     for i, r in enumerate(repos, start=1):
         writer.writerow([
             i,
@@ -399,6 +448,9 @@ def api_export_csv():
             r.get("language", ""),
             r.get("stars_today", ""),
             r.get("total_stars", ""),
+            r.get("fit_for_sahir", {}).get("lane", ""),
+            r.get("fit_for_sahir", {}).get("score", ""),
+            r.get("fit_for_sahir", {}).get("priority", ""),
             r.get("description", ""),
             r.get("url", ""),
         ])
