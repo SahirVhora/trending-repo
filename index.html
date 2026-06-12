@@ -352,7 +352,11 @@
     <main>
         <div id="view-dashboard">
             <h1>🔥 GitHub Trending Repositories</h1>
+<<<<<<< Updated upstream
             <p style="color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem;" id="metaInfo">Data from 2026-06-12 (auto-updated every 3 hours via GitHub Actions)</p>
+=======
+            <p style="color:var(--text-muted);margin-bottom:1rem;font-size:0.9rem;" id="metaInfo">Data from 2026-06-07 (static snapshot - use Load Data tab to refresh)</p>
+>>>>>>> Stashed changes
 
             <div class="stats">
                 <div class="stat-card">
@@ -420,10 +424,11 @@
         <p style="margin-top:0.25rem;"><a href="https://github.com/SahirVhora/trending-repo" target="_blank" rel="noopener noreferrer">View source on GitHub</a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" integrity="sha384-JUh163oCRItcbPme8pYnROHQMC6fNKTBWtRG3I3I0erJkzNgL7uxKlNwcrcFKeqF" crossorigin="anonymous"></script>
     <script>
     // ===== EMBEDDED DEFAULT DATA =====
         var DEFAULT_REPOS = [
+<<<<<<< Updated upstream
       {"name": "apple/container", "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.", "language": "Swift", "stars_today": "2,430", "total_stars": "34,057", "url": "https://github.com/apple/container"},
       {"name": "addyosmani/agent-skills", "description": "Production-grade engineering skills for AI coding agents.", "language": "Shell", "stars_today": "3,278", "total_stars": "55,958", "url": "https://github.com/addyosmani/agent-skills"},
       {"name": "maziyarpanahi/openmed", "description": "open-source healthcare ai", "language": "Python", "stars_today": "426", "total_stars": "3,009", "url": "https://github.com/maziyarpanahi/openmed"},
@@ -443,6 +448,23 @@
       {"name": "hexo-ai/sia", "description": "SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task.", "language": "Python", "stars_today": "199", "total_stars": "1,521", "url": "https://github.com/hexo-ai/sia"},
       {"name": "mattermost/mattermost", "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..", "language": "TypeScript", "stars_today": "53", "total_stars": "37,478", "url": "https://github.com/mattermost/mattermost"},
       {"name": "bannedbook/fanqiang", "description": "翻墙-科学上网", "language": "Kotlin", "stars_today": "161", "total_stars": "47,225", "url": "https://github.com/bannedbook/fanqiang"},
+=======
+      {"name": "mvanhorn/last30days-skill", "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary", "language": "Python", "stars_today": "1,097", "total_stars": "29,649", "url": "https://github.com/mvanhorn/last30days-skill"},
+      {"name": "opencv/opencv", "description": "Open Source Computer Vision Library", "language": "C++", "stars_today": "58", "total_stars": "87,904", "url": "https://github.com/opencv/opencv"},
+      {"name": "Leonxlnx/taste-skill", "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop", "language": "Shell", "stars_today": "1,104", "total_stars": "35,876", "url": "https://github.com/Leonxlnx/taste-skill"},
+      {"name": "NousResearch/hermes-agent", "description": "The agent that grows with you", "language": "Python", "stars_today": "1,117", "total_stars": "185,356", "url": "https://github.com/NousResearch/hermes-agent"},
+      {"name": "lfnovo/open-notebook", "description": "An Open Source implementation of Notebook LM with more flexibility and features", "language": "TypeScript", "stars_today": "555", "total_stars": "26,906", "url": "https://github.com/lfnovo/open-notebook"},
+      {"name": "yikart/AiToEarn", "description": "Let's use AI to Earn!", "language": "TypeScript", "stars_today": "180", "total_stars": "18,504", "url": "https://github.com/yikart/AiToEarn"},
+      {"name": "aaif-goose/goose", "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM", "language": "Rust", "stars_today": "262", "total_stars": "47,183", "url": "https://github.com/aaif-goose/goose"},
+      {"name": "Crosstalk-Solutions/project-nomad", "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered-anytime, anywhere.", "language": "TypeScript", "stars_today": "304", "total_stars": "29,459", "url": "https://github.com/Crosstalk-Solutions/project-nomad"},
+      {"name": "ggml-org/llama.cpp", "description": "LLM inference in C/C++", "language": "C++", "stars_today": "199", "total_stars": "115,102", "url": "https://github.com/ggml-org/llama.cpp"},
+      {"name": "RyanCodrai/turbovec", "description": "A vector index built on TurboQuant, written in Rust with Python bindings", "language": "Python", "stars_today": "1,533", "total_stars": "6,317", "url": "https://github.com/RyanCodrai/turbovec"},
+      {"name": "TapXWorld/ChinaTextbook", "description": "所有小初高、大学PDF教材。", "language": "Roff", "stars_today": "355", "total_stars": "72,305", "url": "https://github.com/TapXWorld/ChinaTextbook"},
+      {"name": "openai/plugins", "description": "OpenAI Plugins", "language": "JavaScript", "stars_today": "262", "total_stars": "1,912", "url": "https://github.com/openai/plugins"},
+      {"name": "refactoringhq/tolaria", "description": "Desktop app to manage markdown knowledge bases", "language": "TypeScript", "stars_today": "242", "total_stars": "12,616", "url": "https://github.com/refactoringhq/tolaria"},
+      {"name": "HunxByts/GhostTrack", "description": "Useful tool to track location or mobile number", "language": "Python", "stars_today": "21", "total_stars": "13,587", "url": "https://github.com/HunxByts/GhostTrack"},
+      {"name": "microsoft/pg_durable", "description": "PostgreSQL in-database durable execution", "language": "Rust", "stars_today": "314", "total_stars": "1,288", "url": "https://github.com/microsoft/pg_durable"},
+>>>>>>> Stashed changes
     ];
 
     var repos = DEFAULT_REPOS.slice();
@@ -768,7 +790,11 @@
         initSort();
         renderCharts();
         var meta = document.getElementById('metaInfo');
+<<<<<<< Updated upstream
         if (meta) meta.textContent = 'Showing ' + repos.length + ' repositories - Data from 2026-06-12 (auto-updated every 3 hours)';
+=======
+        if (meta) meta.textContent = 'Showing ' + repos.length + ' repositories - Data from 2026-06-07 (static snapshot; use Load Data tab to refresh)';
+>>>>>>> Stashed changes
     }
 
     // ===== INIT =====
