@@ -1,130 +1,154 @@
 {
   "meta": {
-    "fetched_at": "2026-06-15T05:10:15.286765+00:00",
+    "fetched_at": "2026-06-15T12:33:15.630013+00:00",
     "since": "daily",
     "language": "all",
-    "count": 15
+    "count": 18
   },
   "repositories": [
     {
       "name": "iptv-org/iptv",
       "description": "Collection of publicly available IPTV channels from all over the world",
       "language": "TypeScript",
-      "stars_today": "1,528",
-      "total_stars": "121,458",
+      "stars_today": "2,650",
+      "total_stars": "122,422",
       "url": "https://github.com/iptv-org/iptv"
     },
     {
-      "name": "freeCodeCamp/freeCodeCamp",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "language": "TypeScript",
-      "stars_today": "146",
-      "total_stars": "447,362",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp"
+      "name": "teslamate-org/teslamate",
+      "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld]",
+      "language": "Elixir",
+      "stars_today": "35",
+      "total_stars": "8,143",
+      "url": "https://github.com/teslamate-org/teslamate"
     },
     {
-      "name": "pytest-dev/pytest",
-      "description": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing",
+      "name": "Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu - one CLI, zero API fees.",
       "language": "Python",
-      "stars_today": "14",
-      "total_stars": "14,080",
-      "url": "https://github.com/pytest-dev/pytest"
-    },
-    {
-      "name": "swc-project/swc",
-      "description": "Rust-based platform for the Web",
-      "language": "Rust",
-      "stars_today": "163",
-      "total_stars": "33,817",
-      "url": "https://github.com/swc-project/swc"
-    },
-    {
-      "name": "chatwoot/chatwoot",
-      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "language": "Ruby",
-      "stars_today": "400",
-      "total_stars": "31,328",
-      "url": "https://github.com/chatwoot/chatwoot"
-    },
-    {
-      "name": "NVIDIA/SkillSpector",
-      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
-      "language": "Python",
-      "stars_today": "964",
-      "total_stars": "5,549",
-      "url": "https://github.com/NVIDIA/SkillSpector"
+      "stars_today": "1,045",
+      "total_stars": "29,396",
+      "url": "https://github.com/Panniantong/Agent-Reach"
     },
     {
       "name": "meshery/meshery",
       "description": "Meshery, the cloud native manager",
       "language": "TypeScript",
-      "stars_today": "20",
-      "total_stars": "10,452",
+      "stars_today": "227",
+      "total_stars": "10,519",
       "url": "https://github.com/meshery/meshery"
     },
     {
-      "name": "cypress-io/cypress",
-      "description": "Fast, easy and reliable testing for anything that runs in a browser.",
+      "name": "chatwoot/chatwoot",
+      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "language": "Ruby",
+      "stars_today": "431",
+      "total_stars": "31,466",
+      "url": "https://github.com/chatwoot/chatwoot"
+    },
+    {
+      "name": "krahets/hello-algo",
+      "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
+      "language": "Java",
+      "stars_today": "34",
+      "total_stars": "126,746",
+      "url": "https://github.com/krahets/hello-algo"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "language": "TypeScript",
-      "stars_today": "39",
-      "total_stars": "50,010",
-      "url": "https://github.com/cypress-io/cypress"
+      "stars_today": "738",
+      "total_stars": "447,619",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp"
     },
     {
-      "name": "GorvGoyl/Clone-Wars",
-      "description": "100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, Whatsapp, Youtube etc. See source code, demo links, tech stack, github stars.",
+      "name": "trycua/cua",
+      "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
+      "language": "HTML",
+      "stars_today": "57",
+      "total_stars": "18,020",
+      "url": "https://github.com/trycua/cua"
+    },
+    {
+      "name": "jwasham/coding-interview-university",
+      "description": "A complete computer science study plan to become a software engineer.",
       "language": "Unknown",
-      "stars_today": "269",
-      "total_stars": "35,599",
-      "url": "https://github.com/GorvGoyl/Clone-Wars"
+      "stars_today": "516",
+      "total_stars": "352,063",
+      "url": "https://github.com/jwasham/coding-interview-university"
     },
     {
-      "name": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "description": "Introduction to Autonomous Robots",
-      "language": "TeX",
-      "stars_today": "293",
-      "total_stars": "2,813",
-      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots"
-    },
-    {
-      "name": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars_today": "244",
-      "total_stars": "29,993",
-      "url": "https://github.com/shiyu-coder/Kronos"
+      "stars_today": "538",
+      "total_stars": "32,726",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
     },
     {
       "name": "music-assistant/server",
       "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
       "language": "Python",
-      "stars_today": "197",
-      "total_stars": "2,235",
+      "stars_today": "226",
+      "total_stars": "2,320",
       "url": "https://github.com/music-assistant/server"
     },
     {
       "name": "Free-TV/IPTV",
       "description": "M3U Playlist for free TV channels",
       "language": "Python",
-      "stars_today": "70",
-      "total_stars": "17,015",
+      "stars_today": "361",
+      "total_stars": "17,137",
       "url": "https://github.com/Free-TV/IPTV"
     },
     {
-      "name": "puppeteer/puppeteer",
-      "description": "JavaScript API for Chrome and Firefox",
-      "language": "TypeScript",
-      "stars_today": "29",
-      "total_stars": "94,681",
-      "url": "https://github.com/puppeteer/puppeteer"
+      "name": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
+      "description": "Introduction to Autonomous Robots",
+      "language": "TeX",
+      "stars_today": "488",
+      "total_stars": "2,949",
+      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots"
     },
     {
-      "name": "andrewyng/aisuite",
-      "description": "Simple, unified interface to multiple Generative AI providers",
+      "name": "Raphire/Win11Debloat",
+      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+      "language": "PowerShell",
+      "stars_today": "114",
+      "total_stars": "47,734",
+      "url": "https://github.com/Raphire/Win11Debloat"
+    },
+    {
+      "name": "mikeroyal/Self-Hosting-Guide",
+      "description": "Self-Hosting Guide. Learn all about locally hosting (on premises & private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Automation, Home Assistant, and Networking.",
+      "language": "Dockerfile",
+      "stars_today": "126",
+      "total_stars": "20,592",
+      "url": "https://github.com/mikeroyal/Self-Hosting-Guide"
+    },
+    {
+      "name": "itsfatduck/optimizerDuck",
+      "description": "Free, open-source Windows optimization tool for performance, privacy, and simplicity.",
+      "language": "C#",
+      "stars_today": "321",
+      "total_stars": "3,499",
+      "url": "https://github.com/itsfatduck/optimizerDuck"
+    },
+    {
+      "name": "NVIDIA/SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
       "language": "Python",
-      "stars_today": "291",
-      "total_stars": "14,451",
-      "url": "https://github.com/andrewyng/aisuite"
+      "stars_today": "1,079",
+      "total_stars": "5,939",
+      "url": "https://github.com/NVIDIA/SkillSpector"
+    },
+    {
+      "name": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars_today": "395",
+      "total_stars": "30,105",
+      "url": "https://github.com/shiyu-coder/Kronos"
     }
   ]
 }
