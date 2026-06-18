@@ -1,170 +1,138 @@
 {
   "meta": {
-    "fetched_at": "2026-06-18T10:41:14.859284+00:00",
+    "fetched_at": "2026-06-18T15:42:19.416353+00:00",
     "since": "daily",
     "language": "all",
-    "count": 20
+    "count": 16
   },
   "repositories": [
     {
-      "name": "DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph - average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "language": "C",
-      "stars_today": "371",
-      "total_stars": "6,348",
-      "url": "https://github.com/DeusData/codebase-memory-mcp"
+      "name": "google-research/timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "language": "Python",
+      "stars_today": "858",
+      "total_stars": "22,635",
+      "url": "https://github.com/google-research/timesfm"
     },
     {
       "name": "n0-computer/iroh",
       "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
       "language": "Rust",
-      "stars_today": "421",
-      "total_stars": "9,805",
+      "stars_today": "369",
+      "total_stars": "9,902",
       "url": "https://github.com/n0-computer/iroh"
-    },
-    {
-      "name": "Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu - one CLI, zero API fees.",
-      "language": "Python",
-      "stars_today": "1,161",
-      "total_stars": "33,928",
-      "url": "https://github.com/Panniantong/Agent-Reach"
-    },
-    {
-      "name": "meshery/meshery",
-      "description": "Meshery, the cloud native manager",
-      "language": "TypeScript",
-      "stars_today": "196",
-      "total_stars": "11,094",
-      "url": "https://github.com/meshery/meshery"
-    },
-    {
-      "name": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars_today": "1,129",
-      "total_stars": "231,771",
-      "url": "https://github.com/obra/superpowers"
-    },
-    {
-      "name": "google-research/timesfm",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "language": "Python",
-      "stars_today": "606",
-      "total_stars": "22,254",
-      "url": "https://github.com/google-research/timesfm"
-    },
-    {
-      "name": "RocketChat/Rocket.Chat",
-      "description": "The Secure CommsOS™ for mission-critical operations",
-      "language": "TypeScript",
-      "stars_today": "22",
-      "total_stars": "45,657",
-      "url": "https://github.com/RocketChat/Rocket.Chat"
-    },
-    {
-      "name": "continuedev/continue",
-      "description": "open-source coding agent",
-      "language": "TypeScript",
-      "stars_today": "49",
-      "total_stars": "34,039",
-      "url": "https://github.com/continuedev/continue"
-    },
-    {
-      "name": "penpot/penpot",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "language": "Clojure",
-      "stars_today": "70",
-      "total_stars": "50,287",
-      "url": "https://github.com/penpot/penpot"
-    },
-    {
-      "name": "krahets/hello-algo",
-      "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
-      "language": "Java",
-      "stars_today": "96",
-      "total_stars": "127,642",
-      "url": "https://github.com/krahets/hello-algo"
-    },
-    {
-      "name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
-      "language": "Rust",
-      "stars_today": "457",
-      "total_stars": "7,748",
-      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
-    },
-    {
-      "name": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "language": "Shell",
-      "stars_today": "1,523",
-      "total_stars": "134,597",
-      "url": "https://github.com/mattpocock/skills"
-    },
-    {
-      "name": "yairm210/Unciv",
-      "description": "Open-source Android/Desktop remake of Civ V",
-      "language": "Kotlin",
-      "stars_today": "24",
-      "total_stars": "10,761",
-      "url": "https://github.com/yairm210/Unciv"
     },
     {
       "name": "freeCodeCamp/freeCodeCamp",
       "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "language": "TypeScript",
-      "stars_today": "757",
-      "total_stars": "449,316",
+      "stars_today": "417",
+      "total_stars": "449,413",
       "url": "https://github.com/freeCodeCamp/freeCodeCamp"
     },
     {
-      "name": "bytedance/UI-TARS-desktop",
-      "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+      "name": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_today": "1,435",
+      "total_stars": "232,117",
+      "url": "https://github.com/obra/superpowers"
+    },
+    {
+      "name": "zai-org/GLM-5",
+      "description": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "language": "Unknown",
+      "stars_today": "286",
+      "total_stars": "3,956",
+      "url": "https://github.com/zai-org/GLM-5"
+    },
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph - average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "language": "C",
+      "stars_today": "2,308",
+      "total_stars": "6,680",
+      "url": "https://github.com/DeusData/codebase-memory-mcp"
+    },
+    {
+      "name": "alibaba/zvec",
+      "description": "A lightweight, lightning-fast, in-process vector database",
+      "language": "C++",
+      "stars_today": "435",
+      "total_stars": "11,104",
+      "url": "https://github.com/alibaba/zvec"
+    },
+    {
+      "name": "withastro/flue",
+      "description": "The sandbox agent framework.",
       "language": "TypeScript",
-      "stars_today": "150",
-      "total_stars": "36,796",
-      "url": "https://github.com/bytedance/UI-TARS-desktop"
+      "stars_today": "164",
+      "total_stars": "5,385",
+      "url": "https://github.com/withastro/flue"
     },
     {
-      "name": "nautechsystems/nautilus_trader",
-      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
-      "language": "Rust",
-      "stars_today": "98",
-      "total_stars": "23,936",
-      "url": "https://github.com/nautechsystems/nautilus_trader"
-    },
-    {
-      "name": "chatwoot/chatwoot",
-      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "language": "Ruby",
-      "stars_today": "264",
-      "total_stars": "32,506",
-      "url": "https://github.com/chatwoot/chatwoot"
-    },
-    {
-      "name": "calesthio/OpenMontage",
-      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "language": "Python",
-      "stars_today": "98",
-      "total_stars": "5,714",
-      "url": "https://github.com/calesthio/OpenMontage"
-    },
-    {
-      "name": "alexzhang13/rlm",
-      "description": "General plug-and-play inference library for Recursive Language Models (RLMs), supporting various sandboxes.",
-      "language": "Python",
-      "stars_today": "43",
-      "total_stars": "4,993",
-      "url": "https://github.com/alexzhang13/rlm"
+      "name": "Kilo-Org/kilocode",
+      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "language": "TypeScript",
+      "stars_today": "1,339",
+      "total_stars": "21,694",
+      "url": "https://github.com/Kilo-Org/kilocode"
     },
     {
       "name": "makeplane/plane",
       "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
       "language": "TypeScript",
-      "stars_today": "89",
-      "total_stars": "51,561",
+      "stars_today": "610",
+      "total_stars": "51,668",
       "url": "https://github.com/makeplane/plane"
+    },
+    {
+      "name": "Kong/insomnia",
+      "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
+      "language": "TypeScript",
+      "stars_today": "13",
+      "total_stars": "38,569",
+      "url": "https://github.com/Kong/insomnia"
+    },
+    {
+      "name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
+      "language": "Rust",
+      "stars_today": "247",
+      "total_stars": "7,825",
+      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"
+    },
+    {
+      "name": "dotnet/aspnetcore",
+      "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.",
+      "language": "C#",
+      "stars_today": "11",
+      "total_stars": "38,073",
+      "url": "https://github.com/dotnet/aspnetcore"
+    },
+    {
+      "name": "owainlewis/awesome-artificial-intelligence",
+      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
+      "language": "Unknown",
+      "stars_today": "33",
+      "total_stars": "14,229",
+      "url": "https://github.com/owainlewis/awesome-artificial-intelligence"
+    },
+    {
+      "name": "Lightricks/LTX-2",
+      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio-video generative model.",
+      "language": "Python",
+      "stars_today": "47",
+      "total_stars": "7,423",
+      "url": "https://github.com/Lightricks/LTX-2"
+    },
+    {
+      "name": "LibreTranslate/LibreTranslate",
+      "description": "Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.",
+      "language": "Python",
+      "stars_today": "83",
+      "total_stars": "14,858",
+      "url": "https://github.com/LibreTranslate/LibreTranslate"
     }
   ]
 }
