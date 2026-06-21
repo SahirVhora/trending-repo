@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-06-21T14:25:46.740873+00:00",
+    "fetched_at": "2026-06-21T16:49:29.669076+00:00",
     "since": "daily",
     "language": "all",
     "count": 16
@@ -11,7 +11,7 @@
       "description": "macOS video editor built for AI",
       "language": "Swift",
       "stars_today": "1,829",
-      "total_stars": "4,326",
+      "total_stars": "4,573",
       "url": "https://github.com/palmier-io/palmier-pro"
     },
     {
@@ -19,7 +19,7 @@
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "stars_today": "993",
-      "total_stars": "7,820",
+      "total_stars": "8,075",
       "url": "https://github.com/calesthio/OpenMontage"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
       "language": "Python",
       "stars_today": "2,617",
-      "total_stars": "43,195",
+      "total_stars": "43,554",
       "url": "https://github.com/chopratejas/headroom"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Turso is an in-process SQL database, compatible with SQLite.",
       "language": "Rust",
       "stars_today": "543",
-      "total_stars": "20,595",
+      "total_stars": "20,658",
       "url": "https://github.com/tursodatabase/turso"
     },
     {
@@ -43,7 +43,7 @@
       "description": "Penpot: The open-source design tool for design and code collaboration",
       "language": "Clojure",
       "stars_today": "1,131",
-      "total_stars": "51,970",
+      "total_stars": "52,048",
       "url": "https://github.com/penpot/penpot"
     },
     {
@@ -51,15 +51,15 @@
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "stars_today": "519",
-      "total_stars": "44,029",
+      "total_stars": "44,219",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     },
     {
       "name": "koala73/worldmonitor",
       "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "language": "TypeScript",
-      "stars_today": "633",
-      "total_stars": "57,809",
+      "stars_today": "253",
+      "total_stars": "57,875",
       "url": "https://github.com/koala73/worldmonitor"
     },
     {
@@ -67,7 +67,7 @@
       "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
       "language": "Python",
       "stars_today": "415",
-      "total_stars": "72,295",
+      "total_stars": "72,377",
       "url": "https://github.com/bytedance/deer-flow"
     },
     {
@@ -75,23 +75,23 @@
       "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph - average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
       "language": "C",
       "stars_today": "1,029",
-      "total_stars": "9,899",
+      "total_stars": "10,018",
       "url": "https://github.com/DeusData/codebase-memory-mcp"
     },
     {
       "name": "mukul975/Anthropic-Cybersecurity-Skills",
       "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
       "language": "Python",
-      "stars_today": "343",
-      "total_stars": "17,329",
+      "stars_today": "445",
+      "total_stars": "17,429",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
     },
     {
       "name": "mikumifa/biliTickerBuy",
       "description": "b站会员购购票辅助工具",
       "language": "Python",
-      "stars_today": "164",
-      "total_stars": "3,688",
+      "stars_today": "56",
+      "total_stars": "3,694",
       "url": "https://github.com/mikumifa/biliTickerBuy"
     },
     {
@@ -99,7 +99,7 @@
       "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
       "language": "Python",
       "stars_today": "288",
-      "total_stars": "18,606",
+      "total_stars": "18,649",
       "url": "https://github.com/smicallef/spiderfoot"
     },
     {
@@ -107,7 +107,7 @@
       "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
       "language": "Python",
       "stars_today": "361",
-      "total_stars": "18,453",
+      "total_stars": "18,513",
       "url": "https://github.com/topoteretes/cognee"
     },
     {
@@ -115,15 +115,15 @@
       "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
       "language": "Unknown",
       "stars_today": "121",
-      "total_stars": "53,916",
+      "total_stars": "53,959",
       "url": "https://github.com/byoungd/English-level-up-tips"
     },
     {
       "name": "asgeirtj/system_prompts_leaks",
       "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
       "language": "JavaScript",
-      "stars_today": "352",
-      "total_stars": "44,090",
+      "stars_today": "366",
+      "total_stars": "44,185",
       "url": "https://github.com/asgeirtj/system_prompts_leaks"
     },
     {
@@ -131,7 +131,7 @@
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
       "language": "Shell",
       "stars_today": "1,441",
-      "total_stars": "139,083",
+      "total_stars": "139,291",
       "url": "https://github.com/mattpocock/skills"
     }
   ]
