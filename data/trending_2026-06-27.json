@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-06-27T08:45:42.282753+00:00",
+    "fetched_at": "2026-06-27T11:01:13.083548+00:00",
     "since": "daily",
     "language": "all",
     "count": 17
@@ -11,7 +11,7 @@
       "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
       "language": "Haskell",
       "stars_today": "432",
-      "total_stars": "12,979",
+      "total_stars": "13,105",
       "url": "https://github.com/simplex-chat/simplex-chat"
     },
     {
@@ -19,7 +19,7 @@
       "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
       "language": "TypeScript",
       "stars_today": "2,407",
-      "total_stars": "21,754",
+      "total_stars": "21,893",
       "url": "https://github.com/google-labs-code/design.md"
     },
     {
@@ -27,7 +27,7 @@
       "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
       "language": "Python",
       "stars_today": "80",
-      "total_stars": "61,892",
+      "total_stars": "61,923",
       "url": "https://github.com/commaai/openpilot"
     },
     {
@@ -35,7 +35,7 @@
       "description": "git push no-mistakes",
       "language": "Go",
       "stars_today": "398",
-      "total_stars": "3,610",
+      "total_stars": "3,656",
       "url": "https://github.com/kunchenguid/no-mistakes"
     },
     {
@@ -43,7 +43,7 @@
       "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.",
       "language": "TypeScript",
       "stars_today": "32",
-      "total_stars": "75,022",
+      "total_stars": "75,063",
       "url": "https://github.com/grafana/grafana"
     },
     {
@@ -51,7 +51,7 @@
       "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
       "language": "HTML",
       "stars_today": "90",
-      "total_stars": "123,889",
+      "total_stars": "123,928",
       "url": "https://github.com/ripienaar/free-for-dev"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
       "language": "Python",
       "stars_today": "960",
-      "total_stars": "70,721",
+      "total_stars": "70,815",
       "url": "https://github.com/opendatalab/MinerU"
     },
     {
@@ -67,7 +67,7 @@
       "description": "张雪峰.skill - 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
       "language": "Unknown",
       "stars_today": "160",
-      "total_stars": "9,361",
+      "total_stars": "9,391",
       "url": "https://github.com/alchaincyf/zhangxuefeng-skill"
     },
     {
@@ -75,7 +75,7 @@
       "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.",
       "language": "TypeScript",
       "stars_today": "1,060",
-      "total_stars": "7,874",
+      "total_stars": "7,929",
       "url": "https://github.com/mauriceboe/TREK"
     },
     {
@@ -83,7 +83,7 @@
       "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
       "stars_today": "1,274",
-      "total_stars": "3,353",
+      "total_stars": "3,413",
       "url": "https://github.com/xbtlin/ai-berkshire"
     },
     {
@@ -91,7 +91,7 @@
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "stars_today": "1,754",
-      "total_stars": "24,194",
+      "total_stars": "24,361",
       "url": "https://github.com/calesthio/OpenMontage"
     },
     {
@@ -99,7 +99,7 @@
       "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
       "language": "Python",
       "stars_today": "243",
-      "total_stars": "1,417",
+      "total_stars": "1,435",
       "url": "https://github.com/aws/agent-toolkit-for-aws"
     },
     {
@@ -107,7 +107,7 @@
       "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
       "language": "Python",
       "stars_today": "673",
-      "total_stars": "53,527",
+      "total_stars": "53,577",
       "url": "https://github.com/NanmiCoder/MediaCrawler"
     },
     {
@@ -115,7 +115,7 @@
       "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
       "stars_today": "950",
-      "total_stars": "116,822",
+      "total_stars": "116,873",
       "url": "https://github.com/garrytan/gstack"
     },
     {
@@ -123,7 +123,7 @@
       "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
       "language": "Go",
       "stars_today": "619",
-      "total_stars": "35,533",
+      "total_stars": "35,566",
       "url": "https://github.com/IceWhaleTech/CasaOS"
     },
     {
@@ -131,7 +131,7 @@
       "description": "Clone any website with one command using AI coding agents",
       "language": "TypeScript",
       "stars_today": "1,088",
-      "total_stars": "21,601",
+      "total_stars": "21,684",
       "url": "https://github.com/JCodesMore/ai-website-cloner-template"
     },
     {
@@ -139,7 +139,7 @@
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu - one CLI, zero API fees.",
       "language": "Python",
       "stars_today": "1,194",
-      "total_stars": "42,811",
+      "total_stars": "42,925",
       "url": "https://github.com/Panniantong/Agent-Reach"
     }
   ]
