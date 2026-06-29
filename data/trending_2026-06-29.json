@@ -1,17 +1,17 @@
 {
   "meta": {
-    "fetched_at": "2026-06-29T11:15:45.393966+00:00",
+    "fetched_at": "2026-06-29T16:00:03.666374+00:00",
     "since": "daily",
     "language": "all",
-    "count": 14
+    "count": 15
   },
   "repositories": [
     {
       "name": "simplex-chat/simplex-chat",
       "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
       "language": "Haskell",
-      "stars_today": "1,180",
-      "total_stars": "15,882",
+      "stars_today": "1,611",
+      "total_stars": "16,198",
       "url": "https://github.com/simplex-chat/simplex-chat"
     },
     {
@@ -19,23 +19,23 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "stars_today": "1,221",
-      "total_stars": "118,190",
+      "total_stars": "118,560",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
       "name": "cupy/cupy",
       "description": "NumPy & SciPy for GPU",
       "language": "Python",
-      "stars_today": "174",
-      "total_stars": "11,674",
+      "stars_today": "352",
+      "total_stars": "11,747",
       "url": "https://github.com/cupy/cupy"
     },
     {
       "name": "altic-dev/FluidVoice",
       "description": "FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. One ⭐ takes us a long way :))",
       "language": "Swift",
-      "stars_today": "365",
-      "total_stars": "4,057",
+      "stars_today": "836",
+      "total_stars": "4,204",
       "url": "https://github.com/altic-dev/FluidVoice"
     },
     {
@@ -43,23 +43,23 @@
       "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
       "language": "Python",
       "stars_today": "191",
-      "total_stars": "34,080",
+      "total_stars": "34,201",
       "url": "https://github.com/soxoj/maigret"
     },
     {
       "name": "commaai/openpilot",
       "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
       "language": "Python",
-      "stars_today": "266",
-      "total_stars": "62,647",
+      "stars_today": "465",
+      "total_stars": "62,691",
       "url": "https://github.com/commaai/openpilot"
     },
     {
       "name": "ripienaar/free-for-dev",
       "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
       "language": "HTML",
-      "stars_today": "495",
-      "total_stars": "126,334",
+      "stars_today": "1,971",
+      "total_stars": "126,519",
       "url": "https://github.com/ripienaar/free-for-dev"
     },
     {
@@ -67,23 +67,23 @@
       "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
       "language": "TypeScript",
       "stars_today": "77",
-      "total_stars": "12,313",
+      "total_stars": "12,453",
       "url": "https://github.com/logto-io/logto"
     },
     {
       "name": "xbtlin/ai-berkshire",
       "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
-      "stars_today": "1,445",
-      "total_stars": "6,252",
+      "stars_today": "1,397",
+      "total_stars": "6,460",
       "url": "https://github.com/xbtlin/ai-berkshire"
     },
     {
       "name": "browser-use/video-use",
       "description": "Edit videos with coding agents",
       "language": "Python",
-      "stars_today": "196",
-      "total_stars": "11,566",
+      "stars_today": "976",
+      "total_stars": "11,713",
       "url": "https://github.com/browser-use/video-use"
     },
     {
@@ -91,15 +91,23 @@
       "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
       "language": "Python",
       "stars_today": "105",
-      "total_stars": "966",
+      "total_stars": "1,049",
       "url": "https://github.com/Unclecheng-li/VulnClaw"
+    },
+    {
+      "name": "0xNyk/council-of-high-intelligence",
+      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more - structured multi-round deliberation with genuine model diversity. One command: /council",
+      "language": "Shell",
+      "stars_today": "323",
+      "total_stars": "1,677",
+      "url": "https://github.com/0xNyk/council-of-high-intelligence"
     },
     {
       "name": "HKUDS/Vibe-Trading",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
       "language": "Python",
-      "stars_today": "492",
-      "total_stars": "14,760",
+      "stars_today": "840",
+      "total_stars": "14,918",
       "url": "https://github.com/HKUDS/Vibe-Trading"
     },
     {
@@ -107,15 +115,15 @@
       "description": "Desktop app to manage markdown knowledge bases",
       "language": "TypeScript",
       "stars_today": "249",
-      "total_stars": "17,306",
+      "total_stars": "17,398",
       "url": "https://github.com/refactoringhq/tolaria"
     },
     {
       "name": "veracrypt/VeraCrypt",
       "description": "Disk encryption with strong security based on TrueCrypt",
       "language": "C",
-      "stars_today": "114",
-      "total_stars": "10,314",
+      "stars_today": "187",
+      "total_stars": "10,392",
       "url": "https://github.com/veracrypt/VeraCrypt"
     }
   ]
