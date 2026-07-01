@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-01T20:04:17.865433+00:00",
+    "fetched_at": "2026-07-01T22:22:53.690008+00:00",
     "since": "daily",
     "language": "all",
     "count": 20
@@ -11,7 +11,7 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "stars_today": "2,097",
-      "total_stars": "123,053",
+      "total_stars": "123,225",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
       "language": "Python",
       "stars_today": "1,195",
-      "total_stars": "29,442",
+      "total_stars": "29,577",
       "url": "https://github.com/usestrix/strix"
     },
     {
@@ -27,7 +27,7 @@
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
       "language": "Python",
       "stars_today": "682",
-      "total_stars": "16,432",
+      "total_stars": "16,472",
       "url": "https://github.com/HKUDS/Vibe-Trading"
     },
     {
@@ -35,7 +35,7 @@
       "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
       "language": "HTML",
       "stars_today": "2,203",
-      "total_stars": "8,274",
+      "total_stars": "8,333",
       "url": "https://github.com/hasaneyldrm/exercises-dataset"
     },
     {
@@ -43,7 +43,7 @@
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
       "stars_today": "714",
-      "total_stars": "2,425",
+      "total_stars": "2,533",
       "url": "https://github.com/facebook/astryx"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
       "language": "TypeScript",
       "stars_today": "1,012",
-      "total_stars": "9,410",
+      "total_stars": "9,465",
       "url": "https://github.com/diegosouzapw/OmniRoute"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Toolkit for linearizing PDFs for LLM datasets/training",
       "language": "Python",
       "stars_today": "295",
-      "total_stars": "18,208",
+      "total_stars": "18,235",
       "url": "https://github.com/allenai/olmocr"
     },
     {
@@ -67,7 +67,7 @@
       "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
       "language": "TypeScript",
       "stars_today": "131",
-      "total_stars": "13,193",
+      "total_stars": "13,225",
       "url": "https://github.com/logto-io/logto"
     },
     {
@@ -75,7 +75,7 @@
       "description": "Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine",
       "language": "Rust",
       "stars_today": "29",
-      "total_stars": "561",
+      "total_stars": "564",
       "url": "https://github.com/togatoga/karukan"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Common User Passwords Profiler (CUPP)",
       "language": "Python",
       "stars_today": "185",
-      "total_stars": "6,227",
+      "total_stars": "6,232",
       "url": "https://github.com/Mebus/cupp"
     },
     {
@@ -91,7 +91,7 @@
       "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
       "language": "Python",
       "stars_today": "123",
-      "total_stars": "1,547",
+      "total_stars": "1,555",
       "url": "https://github.com/Unclecheng-li/VulnClaw"
     },
     {
@@ -99,7 +99,7 @@
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
       "stars_today": "1,086",
-      "total_stars": "50,294",
+      "total_stars": "50,362",
       "url": "https://github.com/microsoft/AI-For-Beginners"
     },
     {
@@ -107,7 +107,7 @@
       "description": "Desktop app to manage markdown knowledge bases",
       "language": "TypeScript",
       "stars_today": "160",
-      "total_stars": "17,991",
+      "total_stars": "18,008",
       "url": "https://github.com/refactoringhq/tolaria"
     },
     {
@@ -115,7 +115,7 @@
       "description": "agent multiplexer that lives in your terminal.",
       "language": "Rust",
       "stars_today": "611",
-      "total_stars": "9,520",
+      "total_stars": "9,552",
       "url": "https://github.com/ogulcancelik/herdr"
     },
     {
@@ -123,7 +123,7 @@
       "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more - structured multi-round deliberation with genuine model diversity. One command: /council",
       "language": "Shell",
       "stars_today": "473",
-      "total_stars": "2,568",
+      "total_stars": "2,589",
       "url": "https://github.com/0xNyk/council-of-high-intelligence"
     },
     {
@@ -131,7 +131,7 @@
       "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Local Wispr Flow alternative. One ⭐ takes us a long way :)) Windows, iOS and Linux coming soon.",
       "language": "Swift",
       "stars_today": "568",
-      "total_stars": "5,405",
+      "total_stars": "5,443",
       "url": "https://github.com/altic-dev/FluidVoice"
     },
     {
@@ -139,7 +139,7 @@
       "description": "Instatic is a modern self-hosted visual CMS - get it running in 1 minute",
       "language": "TypeScript",
       "stars_today": "518",
-      "total_stars": "1,946",
+      "total_stars": "1,986",
       "url": "https://github.com/CoreBunch/Instatic"
     },
     {
@@ -147,7 +147,7 @@
       "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
       "language": "Rust",
       "stars_today": "46",
-      "total_stars": "6,747",
+      "total_stars": "6,767",
       "url": "https://github.com/TencentCloud/CubeSandbox"
     },
     {
@@ -155,7 +155,7 @@
       "description": "Edit videos with coding agents",
       "language": "Python",
       "stars_today": "690",
-      "total_stars": "13,154",
+      "total_stars": "13,185",
       "url": "https://github.com/browser-use/video-use"
     },
     {
@@ -163,7 +163,7 @@
       "description": "Let's use AI to Earn!",
       "language": "TypeScript",
       "stars_today": "149",
-      "total_stars": "22,481",
+      "total_stars": "22,506",
       "url": "https://github.com/yikart/AiToEarn"
     }
   ]
