@@ -15,6 +15,7 @@ import sys
 
 BASE_DIR = pathlib.Path(__file__).parent.parent.resolve()
 INDEX_PATH = BASE_DIR / "index.html"
+SITEMAP_PATH = BASE_DIR / "sitemap.xml"
 FETCH_SCRIPT = BASE_DIR / "fetch_trending.py"
 DATA_DIR = BASE_DIR / "data"
 
@@ -84,6 +85,23 @@ def update_index_html(repos: list[dict]) -> bool:
     return True
 
 
+def update_sitemap(today: str) -> bool:
+    """Update sitemap lastmod to match the baked-in dashboard date."""
+    if not SITEMAP_PATH.exists():
+        return False
+    content = SITEMAP_PATH.read_text(encoding="utf-8")
+    new_content = re.sub(
+        r"<lastmod>\d{4}-\d{2}-\d{2}</lastmod>",
+        f"<lastmod>{today}</lastmod>",
+        content,
+    )
+    if new_content == content:
+        return False
+    SITEMAP_PATH.write_text(new_content, encoding="utf-8")
+    print(f"Updated {SITEMAP_PATH} lastmod to {today}.")
+    return True
+
+
 def save_snapshot(repos: list[dict]) -> pathlib.Path:
     """Save a date-stamped JSON snapshot for trend tracking."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -126,6 +144,7 @@ def main() -> int:
 
     try:
         changed = update_index_html(repos)
+        update_sitemap(datetime.date.today().isoformat())
     except Exception as e:
         print(f"Update failed: {e}", file=sys.stderr)
         return 1

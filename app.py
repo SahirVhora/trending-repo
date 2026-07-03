@@ -349,9 +349,9 @@ def api_compare():
     new_file = request.args.get("new")
     if not old_file or not new_file:
         return jsonify({"error": "Missing old or new parameter"}), 400
-    old_path = DATA_DIR / old_file
-    new_path = DATA_DIR / new_file
-    if not old_path.exists() or not new_path.exists():
+    old_path = _safe_path(DATA_DIR, old_file)
+    new_path = _safe_path(DATA_DIR, new_file)
+    if old_path is None or new_path is None or not old_path.exists() or not new_path.exists():
         return jsonify({"error": "Snapshot not found"}), 404
     results = _compare_snapshots(old_path, new_path)
     return jsonify({
@@ -479,4 +479,6 @@ def api_save():
 
 if __name__ == "__main__":
     debug = os.environ.get("FLASK_DEBUG") == "1"
-    app.run(debug=debug, host="0.0.0.0", port=5000)
+    host = os.environ.get("FLASK_HOST", "127.0.0.1")
+    port = int(os.environ.get("FLASK_PORT", "5000"))
+    app.run(debug=debug, host=host, port=port)

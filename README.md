@@ -26,8 +26,8 @@ A beautiful, interactive dashboard for exploring [GitHub's trending repositories
 ### Option 1: Single HTML File (Zero Setup)
 
 1. Open [`index.html`](index.html) in any modern browser
-2. The latest snapshot is already baked in - no server needed!
-3. To refresh data, switch to the **Load Data** tab and paste JSON from the Python script
+2. The latest snapshot is already baked in - no server needed
+3. Use the search box, sortable table, charts, theme toggle, and CSV export directly in the page
 
 > 💡 **For non-technical users:** Just double-click `index.html`. It works offline.  
 > 🌐 **Or enable GitHub Pages** (see below) and share the URL - no downloads needed!
@@ -114,38 +114,50 @@ Add to your crontab to auto-fetch and compare daily:
 
 ## 🌐 GitHub Pages (Share with Anyone)
 
-Once you push this repo to GitHub, enable GitHub Pages so anyone can view the dashboard in their browser at [https://sahirvhora.github.io/trending-repo/](https://sahirvhora.github.io/trending-repo/):
+The public site is deployed by GitHub Actions to avoid exposing server-side source files on GitHub Pages. Only the static dashboard assets are published.
 
-1. Go to your repo on GitHub → **Settings** → **Pages**
-2. Under **Source**, select **Deploy from a branch**
-3. Choose **`main`** (or `master`) and **`/` (root)**
-4. Click **Save**
-5. Your dashboard will be live at `https://<your-username>.github.io/<repo-name>/`
+Live site: [https://sahirvhora.github.io/trending-repo/](https://sahirvhora.github.io/trending-repo/)
 
-> ⚠️ **Action Permissions:** Go to **Settings → Actions → General → Workflow permissions** and select **Read and write permissions** so the auto-update workflow can push commits.
+Required repository settings:
+
+1. Go to **Settings → Pages**
+2. Set **Build and deployment → Source** to **GitHub Actions**
+3. Go to **Settings → Actions → General → Workflow permissions**
+4. Select **Read and write permissions** so the scheduled update workflow can commit fresh snapshots
+
+Published files are built by `scripts/build_pages_artifact.sh` into `dist/`. The artifact intentionally includes only:
+
+- `index.html`
+- `favicon.svg`
+- `preview.png`
+- `robots.txt`
+- `sitemap.xml`
+- `data/*.json` snapshots
+- `.nojekyll`
 
 ## 📝 Updating the Standalone HTML
 
-The `index.html` includes a baked-in dataset. To update it with fresh data:
+The `index.html` includes a baked-in dataset. To update it with fresh data and refresh the sitemap date:
 
 ```bash
-# 1. Fetch fresh data
-python fetch_trending.py --json > trending.json
-
-# 2. Open index.html, go to Load Data tab
-# 3. Paste the JSON and click Load
+python scripts/update_index_html.py
 ```
+
+The scheduled GitHub Actions workflow runs this every 3 hours, commits changes when data shifts, then deploys the curated Pages artifact.
 
 ---
 
 ## 🧪 Development
 
 ```bash
-# Run the Flask dev server
+# Run the Flask dev server on http://127.0.0.1:5000
 python app.py
 
 # Enable debug mode
 FLASK_DEBUG=1 python app.py
+
+# Optional: expose on a different host/port
+FLASK_HOST=0.0.0.0 FLASK_PORT=5000 python app.py
 ```
 
 ---
