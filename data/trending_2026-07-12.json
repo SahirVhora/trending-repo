@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-12T19:14:57.186140+00:00",
+    "fetched_at": "2026-07-12T21:57:14.777682+00:00",
     "since": "daily",
     "language": "all",
     "count": 17
@@ -11,7 +11,7 @@
       "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
       "language": "Rust",
       "stars_today": "444",
-      "total_stars": "2,675",
+      "total_stars": "2,766",
       "url": "https://github.com/Dicklesworthstone/destructive_command_guard"
     },
     {
@@ -19,7 +19,7 @@
       "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
       "language": "TypeScript",
       "stars_today": "207",
-      "total_stars": "7,935",
+      "total_stars": "7,961",
       "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
     },
     {
@@ -27,7 +27,7 @@
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
       "language": "Python",
       "stars_today": "776",
-      "total_stars": "20,389",
+      "total_stars": "20,470",
       "url": "https://github.com/HKUDS/Vibe-Trading"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python.",
       "language": "Python",
       "stars_today": "55",
-      "total_stars": "23,091",
+      "total_stars": "23,116",
       "url": "https://github.com/PrefectHQ/prefect"
     },
     {
@@ -43,7 +43,7 @@
       "description": "100+ AI Agent & RAG apps you can actually run - clone, customize, ship.",
       "language": "Python",
       "stars_today": "450",
-      "total_stars": "118,412",
+      "total_stars": "118,455",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
     },
     {
@@ -51,7 +51,7 @@
       "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
       "language": "Jupyter Notebook",
       "stars_today": "464",
-      "total_stars": "48,284",
+      "total_stars": "48,344",
       "url": "https://github.com/anthropics/claude-cookbooks"
     },
     {
@@ -59,7 +59,7 @@
       "description": "🏡 Open source home automation that puts local control and privacy first.",
       "language": "Python",
       "stars_today": "404",
-      "total_stars": "88,970",
+      "total_stars": "89,013",
       "url": "https://github.com/home-assistant/core"
     },
     {
@@ -67,7 +67,7 @@
       "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered-anytime, anywhere.",
       "language": "TypeScript",
       "stars_today": "122",
-      "total_stars": "33,715",
+      "total_stars": "33,758",
       "url": "https://github.com/Crosstalk-Solutions/project-nomad"
     },
     {
@@ -75,7 +75,7 @@
       "description": "An open-source background agents coding system",
       "language": "TypeScript",
       "stars_today": "9",
-      "total_stars": "2,212",
+      "total_stars": "2,233",
       "url": "https://github.com/ColeMurray/background-agents"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
       "language": "C#",
       "stars_today": "603",
-      "total_stars": "6,819",
+      "total_stars": "6,900",
       "url": "https://github.com/k1tbyte/Wand-Enhancer"
     },
     {
@@ -91,7 +91,7 @@
       "description": "",
       "language": "TypeScript",
       "stars_today": "79",
-      "total_stars": "13,707",
+      "total_stars": "13,723",
       "url": "https://github.com/pingdotgg/t3code"
     },
     {
@@ -99,7 +99,7 @@
       "description": "An AI Hedge Fund Team",
       "language": "Python",
       "stars_today": "109",
-      "total_stars": "61,340",
+      "total_stars": "61,362",
       "url": "https://github.com/virattt/ai-hedge-fund"
     },
     {
@@ -107,7 +107,7 @@
       "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
       "language": "Dart",
       "stars_today": "151",
-      "total_stars": "45,187",
+      "total_stars": "45,197",
       "url": "https://github.com/chen08209/FlClash"
     },
     {
@@ -115,7 +115,7 @@
       "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
       "stars_today": "274",
-      "total_stars": "29,188",
+      "total_stars": "29,210",
       "url": "https://github.com/davila7/claude-code-templates"
     },
     {
@@ -123,7 +123,7 @@
       "description": "An experimental PlayStation 5 emulator project.",
       "language": "C#",
       "stars_today": "349",
-      "total_stars": "1,148",
+      "total_stars": "1,202",
       "url": "https://github.com/par274/sharpemu"
     },
     {
@@ -131,7 +131,7 @@
       "description": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
       "language": "Rust",
       "stars_today": "518",
-      "total_stars": "2,389",
+      "total_stars": "2,420",
       "url": "https://github.com/malisper/pgrust"
     },
     {
@@ -139,7 +139,7 @@
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
       "stars_today": "210",
-      "total_stars": "4,134",
+      "total_stars": "4,199",
       "url": "https://github.com/Nutlope/hallmark"
     }
   ]
