@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetched_at": "2026-07-14T03:14:01.436979+00:00",
+    "fetched_at": "2026-07-14T08:20:03.292400+00:00",
     "since": "daily",
     "language": "all",
-    "count": 10
+    "count": 11
   },
   "repositories": [
     {
@@ -11,15 +11,23 @@
       "description": "The open-source CapCut alternative",
       "language": "TypeScript",
       "stars_today": "1,229",
-      "total_stars": "66,914",
+      "total_stars": "67,946",
       "url": "https://github.com/OpenCut-app/OpenCut"
+    },
+    {
+      "name": "Dicklesworthstone/destructive_command_guard",
+      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+      "language": "Rust",
+      "stars_today": "1,295",
+      "total_stars": "3,967",
+      "url": "https://github.com/Dicklesworthstone/destructive_command_guard"
     },
     {
       "name": "HKUDS/Vibe-Trading",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
       "language": "Python",
       "stars_today": "1,153",
-      "total_stars": "21,931",
+      "total_stars": "22,241",
       "url": "https://github.com/HKUDS/Vibe-Trading"
     },
     {
@@ -27,7 +35,7 @@
       "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
       "language": "TypeScript",
       "stars_today": "78",
-      "total_stars": "41,984",
+      "total_stars": "42,165",
       "url": "https://github.com/moeru-ai/airi"
     },
     {
@@ -35,7 +43,7 @@
       "description": "100+ AI Agent & RAG apps you can actually run - clone, customize, ship.",
       "language": "Python",
       "stars_today": "996",
-      "total_stars": "119,787",
+      "total_stars": "120,081",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
     },
     {
@@ -43,7 +51,7 @@
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
       "stars_today": "794",
-      "total_stars": "5,282",
+      "total_stars": "5,518",
       "url": "https://github.com/Nutlope/hallmark"
     },
     {
@@ -51,7 +59,7 @@
       "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
       "language": "PowerShell",
       "stars_today": "118",
-      "total_stars": "50,964",
+      "total_stars": "51,141",
       "url": "https://github.com/Raphire/Win11Debloat"
     },
     {
@@ -59,7 +67,7 @@
       "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
       "language": "Python",
       "stars_today": "1,095",
-      "total_stars": "84,929",
+      "total_stars": "85,315",
       "url": "https://github.com/Graphify-Labs/graphify"
     },
     {
@@ -67,7 +75,7 @@
       "description": "1,324-exercise fitness dataset - animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
       "language": "HTML",
       "stars_today": "451",
-      "total_stars": "12,718",
+      "total_stars": "12,942",
       "url": "https://github.com/hasaneyldrm/exercises-dataset"
     },
     {
@@ -75,7 +83,7 @@
       "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "stars_today": "543",
-      "total_stars": "120,700",
+      "total_stars": "120,886",
       "url": "https://github.com/github/spec-kit"
     },
     {
@@ -83,7 +91,7 @@
       "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
       "language": "JavaScript",
       "stars_today": "299",
-      "total_stars": "38,697",
+      "total_stars": "38,947",
       "url": "https://github.com/coreyhaines31/marketingskills"
     }
   ]
