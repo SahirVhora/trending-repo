@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-18T13:36:33.557685+00:00",
+    "fetched_at": "2026-07-18T16:02:06.143153+00:00",
     "since": "daily",
     "language": "all",
     "count": 11
@@ -11,7 +11,7 @@
       "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
       "language": "Python",
       "stars_today": "827",
-      "total_stars": "12,512",
+      "total_stars": "12,621",
       "url": "https://github.com/Robbyant/lingbot-map"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data",
       "language": "Python",
       "stars_today": "48",
-      "total_stars": "1,183",
+      "total_stars": "1,208",
       "url": "https://github.com/apache/ossie"
     },
     {
@@ -27,7 +27,7 @@
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
       "stars_today": "337",
-      "total_stars": "36,397",
+      "total_stars": "36,445",
       "url": "https://github.com/PostHog/posthog"
     },
     {
@@ -35,15 +35,15 @@
       "description": "Skills for Design Engineers",
       "language": "TypeScript",
       "stars_today": "529",
-      "total_stars": "4,735",
+      "total_stars": "4,819",
       "url": "https://github.com/ibelick/ui-skills"
     },
     {
       "name": "rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars_today": "232",
-      "total_stars": "38,909",
+      "stars_today": "240",
+      "total_stars": "38,967",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
       "language": "Python",
       "stars_today": "356",
-      "total_stars": "19,974",
+      "total_stars": "20,034",
       "url": "https://github.com/tirth8205/code-review-graph"
     },
     {
@@ -59,7 +59,7 @@
       "description": "LIBERATED AI CHAT",
       "language": "TypeScript",
       "stars_today": "63",
-      "total_stars": "9,375",
+      "total_stars": "9,414",
       "url": "https://github.com/elder-plinius/G0DM0D3"
     },
     {
@@ -67,7 +67,7 @@
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
       "stars_today": "242",
-      "total_stars": "23,167",
+      "total_stars": "23,216",
       "url": "https://github.com/lyogavin/airllm"
     },
     {
@@ -75,7 +75,7 @@
       "description": "The go-to web for your AI coding agent - local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
       "language": "TypeScript",
       "stars_today": "192",
-      "total_stars": "981",
+      "total_stars": "1,054",
       "url": "https://github.com/KnockOutEZ/wigolo"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Master programming by recreating your favorite technologies from scratch.",
       "language": "Markdown",
       "stars_today": "1,131",
-      "total_stars": "527,957",
+      "total_stars": "528,029",
       "url": "https://github.com/codecrafters-io/build-your-own-x"
     },
     {
@@ -91,7 +91,7 @@
       "description": "Kimi Code CLI is your next CLI agent.",
       "language": "Python",
       "stars_today": "48",
-      "total_stars": "9,299",
+      "total_stars": "9,341",
       "url": "https://github.com/MoonshotAI/kimi-cli"
     }
   ]
