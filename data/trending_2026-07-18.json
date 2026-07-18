@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-18T19:13:09.317182+00:00",
+    "fetched_at": "2026-07-18T21:56:38.672779+00:00",
     "since": "daily",
     "language": "all",
     "count": 11
@@ -11,7 +11,7 @@
       "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
       "language": "Python",
       "stars_today": "827",
-      "total_stars": "12,740",
+      "total_stars": "12,856",
       "url": "https://github.com/Robbyant/lingbot-map"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data",
       "language": "Python",
       "stars_today": "48",
-      "total_stars": "1,234",
+      "total_stars": "1,257",
       "url": "https://github.com/apache/ossie"
     },
     {
@@ -27,7 +27,7 @@
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
       "stars_today": "337",
-      "total_stars": "36,502",
+      "total_stars": "36,555",
       "url": "https://github.com/PostHog/posthog"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Skills for Design Engineers",
       "language": "TypeScript",
       "stars_today": "242",
-      "total_stars": "4,889",
+      "total_stars": "4,958",
       "url": "https://github.com/ibelick/ui-skills"
     },
     {
@@ -43,7 +43,7 @@
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "stars_today": "240",
-      "total_stars": "39,017",
+      "total_stars": "39,062",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
       "language": "Python",
       "stars_today": "356",
-      "total_stars": "20,089",
+      "total_stars": "20,125",
       "url": "https://github.com/tirth8205/code-review-graph"
     },
     {
@@ -59,7 +59,7 @@
       "description": "LIBERATED AI CHAT",
       "language": "TypeScript",
       "stars_today": "63",
-      "total_stars": "9,453",
+      "total_stars": "9,481",
       "url": "https://github.com/elder-plinius/G0DM0D3"
     },
     {
@@ -67,7 +67,7 @@
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
       "stars_today": "242",
-      "total_stars": "23,260",
+      "total_stars": "23,301",
       "url": "https://github.com/lyogavin/airllm"
     },
     {
@@ -75,7 +75,7 @@
       "description": "The go-to web for your AI coding agent - local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
       "language": "TypeScript",
       "stars_today": "192",
-      "total_stars": "1,125",
+      "total_stars": "1,179",
       "url": "https://github.com/KnockOutEZ/wigolo"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Master programming by recreating your favorite technologies from scratch.",
       "language": "Markdown",
       "stars_today": "1,131",
-      "total_stars": "528,112",
+      "total_stars": "528,190",
       "url": "https://github.com/codecrafters-io/build-your-own-x"
     },
     {
@@ -91,7 +91,7 @@
       "description": "Kimi Code CLI is your next CLI agent.",
       "language": "Python",
       "stars_today": "48",
-      "total_stars": "9,392",
+      "total_stars": "9,444",
       "url": "https://github.com/MoonshotAI/kimi-cli"
     }
   ]
