@@ -1,17 +1,25 @@
 {
   "meta": {
-    "fetched_at": "2026-07-21T03:26:16.967227+00:00",
+    "fetched_at": "2026-07-21T08:39:20.017833+00:00",
     "since": "daily",
     "language": "all",
-    "count": 20
+    "count": 21
   },
   "repositories": [
+    {
+      "name": "bojieli/ai-agent-book",
+      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "language": "Python",
+      "stars_today": "4,434",
+      "total_stars": "12,366",
+      "url": "https://github.com/bojieli/ai-agent-book"
+    },
     {
       "name": "tirth8205/code-review-graph",
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
       "language": "Python",
       "stars_today": "1,833",
-      "total_stars": "23,471",
+      "total_stars": "23,977",
       "url": "https://github.com/tirth8205/code-review-graph"
     },
     {
@@ -19,7 +27,7 @@
       "description": "The most intelligent agent harness for code",
       "language": "Rust",
       "stars_today": "568",
-      "total_stars": "9,740",
+      "total_stars": "9,945",
       "url": "https://github.com/1jehuang/jcode"
     },
     {
@@ -27,7 +35,7 @@
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models - Claude, GPT, Gemini, Kimi K3, GLM, DeepSeek. Works with Claude Code, Codex, Cursor, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, multimodal, Desktop/PWA. Built by 500+ contributors.",
       "language": "TypeScript",
       "stars_today": "1,107",
-      "total_stars": "22,060",
+      "total_stars": "22,508",
       "url": "https://github.com/diegosouzapw/OmniRoute"
     },
     {
@@ -35,7 +43,7 @@
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "stars_today": "823",
-      "total_stars": "40,668",
+      "total_stars": "40,994",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
     },
     {
@@ -43,7 +51,7 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "stars_today": "862",
-      "total_stars": "134,830",
+      "total_stars": "135,059",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
@@ -51,7 +59,7 @@
       "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations",
       "language": "Python",
       "stars_today": "458",
-      "total_stars": "18,764",
+      "total_stars": "18,805",
       "url": "https://github.com/kvcache-ai/ktransformers"
     },
     {
@@ -59,7 +67,7 @@
       "description": "The open-source AI voice studio. Clone, dictate, create.",
       "language": "TypeScript",
       "stars_today": "821",
-      "total_stars": "44,294",
+      "total_stars": "44,672",
       "url": "https://github.com/jamiepine/voicebox"
     },
     {
@@ -67,7 +75,7 @@
       "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
       "language": "Python",
       "stars_today": "234",
-      "total_stars": "28,842",
+      "total_stars": "28,910",
       "url": "https://github.com/topoteretes/cognee"
     },
     {
@@ -75,7 +83,7 @@
       "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
       "language": "Python",
       "stars_today": "565",
-      "total_stars": "14,321",
+      "total_stars": "14,471",
       "url": "https://github.com/Robbyant/lingbot-map"
     },
     {
@@ -83,7 +91,7 @@
       "description": "Open source alternative to Semrush and Ahrefs",
       "language": "TypeScript",
       "stars_today": "939",
-      "total_stars": "5,963",
+      "total_stars": "6,157",
       "url": "https://github.com/every-app/open-seo"
     },
     {
@@ -91,7 +99,7 @@
       "description": "Kimi Code CLI is your next CLI agent.",
       "language": "Python",
       "stars_today": "410",
-      "total_stars": "10,283",
+      "total_stars": "10,375",
       "url": "https://github.com/MoonshotAI/kimi-cli"
     },
     {
@@ -99,7 +107,7 @@
       "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
       "language": "Python",
       "stars_today": "317",
-      "total_stars": "37,162",
+      "total_stars": "37,257",
       "url": "https://github.com/AstrBotDevs/AstrBot"
     },
     {
@@ -107,7 +115,7 @@
       "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
       "language": "Python",
       "stars_today": "96",
-      "total_stars": "26,582",
+      "total_stars": "26,662",
       "url": "https://github.com/PrefectHQ/fastmcp"
     },
     {
@@ -115,7 +123,7 @@
       "description": "The go-to web for your AI coding agent - local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
       "language": "TypeScript",
       "stars_today": "689",
-      "total_stars": "2,629",
+      "total_stars": "2,768",
       "url": "https://github.com/KnockOutEZ/wigolo"
     },
     {
@@ -123,7 +131,7 @@
       "description": "A batteries-included framework for building web apps",
       "language": "Rust",
       "stars_today": "371",
-      "total_stars": "1,620",
+      "total_stars": "1,795",
       "url": "https://github.com/tokio-rs/topcoat"
     },
     {
@@ -131,7 +139,7 @@
       "description": "Collection of publicly available IPTV channels from all over the world",
       "language": "TypeScript",
       "stars_today": "240",
-      "total_stars": "133,816",
+      "total_stars": "133,906",
       "url": "https://github.com/iptv-org/iptv"
     },
     {
@@ -139,7 +147,7 @@
       "description": "Self-hosted deployment platform",
       "language": "TypeScript",
       "stars_today": "1,641",
-      "total_stars": "4,955",
+      "total_stars": "5,288",
       "url": "https://github.com/oblien/openship"
     },
     {
@@ -147,7 +155,7 @@
       "description": "Free, open-source web app for learning about ontologies and Microsoft Fabric IQ. Explore a catalogue of pre-built ontologies, design your own visually, export as RDF/XML, and share interactive diagrams. Zero backend, fully static.",
       "language": "TypeScript",
       "stars_today": "464",
-      "total_stars": "1,774",
+      "total_stars": "1,844",
       "url": "https://github.com/microsoft/Ontology-Playground"
     },
     {
@@ -155,7 +163,7 @@
       "description": "ggml speech-to-text inference for 16+ model families",
       "language": "C++",
       "stars_today": "395",
-      "total_stars": "1,321",
+      "total_stars": "1,397",
       "url": "https://github.com/handy-computer/transcribe.cpp"
     },
     {
@@ -163,7 +171,7 @@
       "description": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces",
       "language": "C++",
       "stars_today": "282",
-      "total_stars": "9,935",
+      "total_stars": "10,099",
       "url": "https://github.com/moonshine-ai/moonshine"
     }
   ]
