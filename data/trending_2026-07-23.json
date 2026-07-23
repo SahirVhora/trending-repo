@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "fetched_at": "2026-07-23T03:30:54.511186+00:00",
+    "since": "daily",
+    "language": "all",
+    "count": 19
+  },
+  "repositories": [
+    {
+      "name": "koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "language": "TypeScript",
+      "stars_today": "4,139",
+      "total_stars": "69,336",
+      "url": "https://github.com/koala73/worldmonitor"
+    },
+    {
+      "name": "ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection - all without a single pixel of video.",
+      "language": "Rust",
+      "stars_today": "741",
+      "total_stars": "83,974",
+      "url": "https://github.com/ruvnet/RuView"
+    },
+    {
+      "name": "ayghri/i-have-adhd",
+      "description": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars_today": "1,699",
+      "total_stars": "8,452",
+      "url": "https://github.com/ayghri/i-have-adhd"
+    },
+    {
+      "name": "schollz/croc",
+      "description": "Easily and securely send things from one computer to another 🐊 📦",
+      "language": "Go",
+      "stars_today": "739",
+      "total_stars": "37,725",
+      "url": "https://github.com/schollz/croc"
+    },
+    {
+      "name": "likec4/likec4",
+      "description": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code",
+      "language": "TypeScript",
+      "stars_today": "80",
+      "total_stars": "4,354",
+      "url": "https://github.com/likec4/likec4"
+    },
+    {
+      "name": "chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "language": "Assembly",
+      "stars_today": "768",
+      "total_stars": "70,675",
+      "url": "https://github.com/chrislgarry/Apollo-11"
+    },
+    {
+      "name": "jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "language": "TypeScript",
+      "stars_today": "557",
+      "total_stars": "45,872",
+      "url": "https://github.com/jamiepine/voicebox"
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models - Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+      "language": "TypeScript",
+      "stars_today": "1,651",
+      "total_stars": "25,528",
+      "url": "https://github.com/diegosouzapw/OmniRoute"
+    },
+    {
+      "name": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars_today": "137",
+      "total_stars": "32,654",
+      "url": "https://github.com/shiyu-coder/Kronos"
+    },
+    {
+      "name": "ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "language": "Python",
+      "stars_today": "163",
+      "total_stars": "68,869",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "name": "oblien/openship",
+      "description": "Self-hosted deployment platform",
+      "language": "TypeScript",
+      "stars_today": "1,302",
+      "total_stars": "7,387",
+      "url": "https://github.com/oblien/openship"
+    },
+    {
+      "name": "agegr/pi-web",
+      "description": "Web UI for the pi coding agent",
+      "language": "TypeScript",
+      "stars_today": "314",
+      "total_stars": "2,111",
+      "url": "https://github.com/agegr/pi-web"
+    },
+    {
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars_today": "652",
+      "total_stars": "42,360",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+    },
+    {
+      "name": "tirth8205/code-review-graph",
+      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+      "language": "Python",
+      "stars_today": "882",
+      "total_stars": "25,414",
+      "url": "https://github.com/tirth8205/code-review-graph"
+    },
+    {
+      "name": "dreamhunter2333/cloudflare_temp_email",
+      "description": "CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 IMAP SMTP TelegramBot",
+      "language": "TypeScript",
+      "stars_today": "68",
+      "total_stars": "10,848",
+      "url": "https://github.com/dreamhunter2333/cloudflare_temp_email"
+    },
+    {
+      "name": "DioxusLabs/dioxus",
+      "description": "Fullstack app framework for web, desktop, and mobile.",
+      "language": "Rust",
+      "stars_today": "420",
+      "total_stars": "38,058",
+      "url": "https://github.com/DioxusLabs/dioxus"
+    },
+    {
+      "name": "hyprwm/Hyprland",
+      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "language": "C++",
+      "stars_today": "356",
+      "total_stars": "37,322",
+      "url": "https://github.com/hyprwm/Hyprland"
+    },
+    {
+      "name": "Pumpkin-MC/Pumpkin",
+      "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+      "language": "Rust",
+      "stars_today": "108",
+      "total_stars": "8,478",
+      "url": "https://github.com/Pumpkin-MC/Pumpkin"
+    },
+    {
+      "name": "dottxt-ai/outlines",
+      "description": "Structured Outputs",
+      "language": "Python",
+      "stars_today": "364",
+      "total_stars": "15,144",
+      "url": "https://github.com/dottxt-ai/outlines"
+    }
+  ]
+}
