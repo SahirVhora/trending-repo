@@ -29,7 +29,7 @@ A beautiful, interactive dashboard for exploring [GitHub's trending repositories
 2. The latest snapshot is already baked in - no server needed
 3. Use the search box, sortable table, charts, theme toggle, and CSV export directly in the page
 
-> 💡 **For non-technical users:** Just double-click `index.html`. It works offline.  
+> 💡 **For non-technical users:** Just double-click `index.html`. It works offline.
 > 🌐 **Or enable GitHub Pages** (see below) and share the URL - no downloads needed!
 
 ### Option 2: Flask Server (Full Features)
@@ -38,11 +38,21 @@ A beautiful, interactive dashboard for exploring [GitHub's trending repositories
 # Install dependencies
 pip install -r requirements.txt
 
-# Start the server
+# Start the loopback-only server
 python app.py
 
 # Open http://localhost:5000 in your browser
 ```
+
+File-writing API routes are disabled unless local mode and a write token are both set:
+
+```bash
+export TRENDING_REPO_LOCAL_MODE=1
+export TRENDING_REPO_WRITE_TOKEN='replace-with-a-long-random-token'
+python app.py
+```
+
+A client must send `X-Write-Token` to `GET /api/write-csrf`, keep the returned `write_csrf` cookie, then send the returned token as `X-CSRF-Token` with the cookie and write-token header on `/api/save` or `/api/auto-save`.
 
 ---
 
