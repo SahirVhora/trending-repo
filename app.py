@@ -6,6 +6,7 @@ import datetime
 import io
 import json
 import os
+import secrets
 import pathlib
 import re
 from typing import Any
@@ -31,6 +32,37 @@ REPORTS_DIR = BASE_DIR / "reports"
 
 _CACHE: dict[str, tuple[list[dict], float]] = {}
 _CACHE_TTL = 900  # 15 minutes
+_WRITE_ROUTES = {"/api/auto-save", "/api/save"}
+
+
+def _local_writes_enabled() -> bool:
+    """Return whether file-writing endpoints were explicitly enabled."""
+    return os.environ.get("TRENDING_REPO_LOCAL_MODE") == "1"
+
+
+def _valid_write_token() -> bool:
+    """Require a configured bearer-style token on local write requests."""
+    expected = os.environ.get("TRENDING_REPO_WRITE_TOKEN", "")
+    supplied = request.headers.get("X-Write-Token", "")
+    return bool(expected) and bool(supplied) and secrets.compare_digest(supplied, expected)
+
+
+@app.before_request
+def _protect_write_routes():
+    """Fail closed on every route that can mutate repository data."""
+    if request.path not in _WRITE_ROUTES:
+        return None
+    if request.method != "POST":
+        return None
+    if not _local_writes_enabled():
+        return jsonify({"error": "Not found"}), 404
+    if not _valid_write_token():
+        return jsonify({"error": "Authentication required"}), 401
+    csrf_cookie = request.cookies.get("write_csrf", "")
+    csrf_header = request.headers.get("X-CSRF-Token", "")
+    if not csrf_cookie or not csrf_header or not secrets.compare_digest(csrf_header, csrf_cookie):
+        return jsonify({"error": "Valid CSRF token required"}), 403
+    return None
 
 
 
@@ -373,6 +405,26 @@ def api_stats():
     except Exception as e:
         return jsonify({"error": str(e)}), 503
     return jsonify(_compute_stats(repos))
+
+
+@app.route("/api/write-csrf")
+def api_write_csrf():
+    """Issue a same-site CSRF token for authenticated local write clients."""
+    if not _local_writes_enabled():
+        return jsonify({"error": "Not found"}), 404
+    if not _valid_write_token():
+        return jsonify({"error": "Authentication required"}), 401
+    token = os.urandom(32).hex()
+    response = jsonify({"csrf_token": token})
+    response.set_cookie(
+        "write_csrf",
+        token,
+        httponly=True,
+        samesite="Strict",
+        secure=request.is_secure,
+        max_age=600,
+    )
+    return response
 
 
 @app.route("/api/auto-save", methods=["POST"])
