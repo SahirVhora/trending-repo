@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-26T03:37:34.113413+00:00",
+    "fetched_at": "2026-07-26T08:34:53.459937+00:00",
     "since": "daily",
     "language": "all",
     "count": 18
@@ -11,7 +11,7 @@
       "description": "A hive mind communication platform",
       "language": "Rust",
       "stars_today": "2,491",
-      "total_stars": "12,081",
+      "total_stars": "12,400",
       "url": "https://github.com/block/buzz"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Open-source & free - Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "stars_today": "431",
-      "total_stars": "13,055",
+      "total_stars": "13,241",
       "url": "https://github.com/alibaba/open-code-review"
     },
     {
@@ -27,7 +27,7 @@
       "description": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
       "stars_today": "986",
-      "total_stars": "3,674",
+      "total_stars": "3,842",
       "url": "https://github.com/citrolabs/ego-lite"
     },
     {
@@ -35,7 +35,7 @@
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
       "language": "Python",
       "stars_today": "577",
-      "total_stars": "70,637",
+      "total_stars": "70,759",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -43,7 +43,7 @@
       "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
       "language": "Jupyter Notebook",
       "stars_today": "132",
-      "total_stars": "49,930",
+      "total_stars": "49,997",
       "url": "https://github.com/anthropics/claude-cookbooks"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
       "language": "Rust",
       "stars_today": "503",
-      "total_stars": "13,455",
+      "total_stars": "13,529",
       "url": "https://github.com/Automattic/harper"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
       "stars_today": "319",
-      "total_stars": "33,832",
+      "total_stars": "33,898",
       "url": "https://github.com/shiyu-coder/Kronos"
     },
     {
@@ -67,7 +67,7 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "stars_today": "479",
-      "total_stars": "261,149",
+      "total_stars": "261,275",
       "url": "https://github.com/obra/superpowers"
     },
     {
@@ -75,7 +75,7 @@
       "description": "Empowering everyone to host fast and efficient Minecraft servers.",
       "language": "Rust",
       "stars_today": "358",
-      "total_stars": "9,740",
+      "total_stars": "9,794",
       "url": "https://github.com/Pumpkin-MC/Pumpkin"
     },
     {
@@ -83,7 +83,7 @@
       "description": "bluetooth mesh chat, IRC vibes",
       "language": "Swift",
       "stars_today": "1,720",
-      "total_stars": "28,792",
+      "total_stars": "28,985",
       "url": "https://github.com/permissionlesstech/bitchat"
     },
     {
@@ -91,7 +91,7 @@
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "stars_today": "1,740",
-      "total_stars": "188,420",
+      "total_stars": "188,734",
       "url": "https://github.com/mattpocock/skills"
     },
     {
@@ -99,7 +99,7 @@
       "description": "macOS video editor built for AI",
       "language": "Swift",
       "stars_today": "412",
-      "total_stars": "12,258",
+      "total_stars": "12,342",
       "url": "https://github.com/palmier-io/palmier-pro"
     },
     {
@@ -107,7 +107,7 @@
       "description": "The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.",
       "language": "TypeScript",
       "stars_today": "426",
-      "total_stars": "5,140",
+      "total_stars": "5,252",
       "url": "https://github.com/CoreBunch/Instatic"
     },
     {
@@ -115,7 +115,7 @@
       "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
       "language": "Jupyter Notebook",
       "stars_today": "408",
-      "total_stars": "45,399",
+      "total_stars": "45,477",
       "url": "https://github.com/Lordog/dive-into-llms"
     },
     {
@@ -123,7 +123,7 @@
       "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
       "language": "Python",
       "stars_today": "86",
-      "total_stars": "14,311",
+      "total_stars": "14,352",
       "url": "https://github.com/RyanCodrai/turbovec"
     },
     {
@@ -131,7 +131,7 @@
       "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
       "language": "Java",
       "stars_today": "360",
-      "total_stars": "26,713",
+      "total_stars": "26,820",
       "url": "https://github.com/OtterMind/Chat2DB"
     },
     {
@@ -139,7 +139,7 @@
       "description": "Simple, unified interface to multiple Generative AI providers",
       "language": "Python",
       "stars_today": "77",
-      "total_stars": "15,250",
+      "total_stars": "15,288",
       "url": "https://github.com/andrewyng/aisuite"
     },
     {
@@ -147,7 +147,7 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "stars_today": "377",
-      "total_stars": "233,362",
+      "total_stars": "233,437",
       "url": "https://github.com/affaan-m/ECC"
     }
   ]
