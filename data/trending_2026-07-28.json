@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-28T11:24:14.420256+00:00",
+    "fetched_at": "2026-07-28T14:25:26.118563+00:00",
     "since": "daily",
     "language": "all",
     "count": 12
@@ -11,7 +11,7 @@
       "description": "Create and share 3D architectural projects.",
       "language": "TypeScript",
       "stars_today": "412",
-      "total_stars": "18,220",
+      "total_stars": "18,358",
       "url": "https://github.com/pascalorg/editor"
     },
     {
@@ -19,15 +19,15 @@
       "description": "Jenkins automation server",
       "language": "Java",
       "stars_today": "180",
-      "total_stars": "25,971",
+      "total_stars": "26,002",
       "url": "https://github.com/jenkinsci/jenkins"
     },
     {
       "name": "moeru-ai/airi",
       "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
       "language": "TypeScript",
-      "stars_today": "572",
-      "total_stars": "44,461",
+      "stars_today": "796",
+      "total_stars": "44,553",
       "url": "https://github.com/moeru-ai/airi"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Simple, unified interface to multiple Generative AI providers",
       "language": "Python",
       "stars_today": "185",
-      "total_stars": "15,557",
+      "total_stars": "15,592",
       "url": "https://github.com/andrewyng/aisuite"
     },
     {
@@ -43,7 +43,7 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "stars_today": "458",
-      "total_stars": "234,412",
+      "total_stars": "234,531",
       "url": "https://github.com/affaan-m/ECC"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Build local voice agents with open-source models",
       "language": "Python",
       "stars_today": "177",
-      "total_stars": "6,748",
+      "total_stars": "6,888",
       "url": "https://github.com/huggingface/speech-to-speech"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Turn any technical book PDF into a Claude Code skill - ready to study, reference, and use while you work.",
       "language": "Python",
       "stars_today": "366",
-      "total_stars": "10,699",
+      "total_stars": "10,882",
       "url": "https://github.com/virgiliojr94/book-to-skill"
     },
     {
@@ -67,7 +67,7 @@
       "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
       "language": "TypeScript",
       "stars_today": "420",
-      "total_stars": "3,036",
+      "total_stars": "3,114",
       "url": "https://github.com/opengeos/GeoLibre"
     },
     {
@@ -75,7 +75,7 @@
       "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
       "language": "Python",
       "stars_today": "113",
-      "total_stars": "9,131",
+      "total_stars": "9,271",
       "url": "https://github.com/paperswithbacktest/awesome-systematic-trading"
     },
     {
@@ -83,23 +83,23 @@
       "description": "AI Agent Governance Toolkit - Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
       "language": "Python",
       "stars_today": "17",
-      "total_stars": "4,969",
+      "total_stars": "5,029",
       "url": "https://github.com/microsoft/agent-governance-toolkit"
     },
     {
       "name": "yorukot/superfile",
       "description": "Pretty fancy and modern terminal file manager",
       "language": "Go",
-      "stars_today": "600",
-      "total_stars": "21,168",
+      "stars_today": "660",
+      "total_stars": "21,241",
       "url": "https://github.com/yorukot/superfile"
     },
     {
       "name": "bradautomates/claude-video",
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
       "language": "Python",
-      "stars_today": "434",
-      "total_stars": "11,582",
+      "stars_today": "989",
+      "total_stars": "11,733",
       "url": "https://github.com/bradautomates/claude-video"
     }
   ]
