@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-31T19:44:10.969990+00:00",
+    "fetched_at": "2026-07-31T22:10:40.287992+00:00",
     "since": "daily",
     "language": "all",
     "count": 12
@@ -11,7 +11,7 @@
       "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
       "language": "PowerShell",
       "stars_today": "612",
-      "total_stars": "10,513",
+      "total_stars": "10,634",
       "url": "https://github.com/zhaoxuya520/reverse-skill"
     },
     {
@@ -19,7 +19,7 @@
       "description": "The open-source alternative to Claude Cowork (powered by opencode)",
       "language": "TypeScript",
       "stars_today": "796",
-      "total_stars": "19,373",
+      "total_stars": "19,452",
       "url": "https://github.com/different-ai/openwork"
     },
     {
@@ -27,7 +27,7 @@
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
       "stars_today": "660",
-      "total_stars": "56,097",
+      "total_stars": "56,186",
       "url": "https://github.com/mvanhorn/last30days-skill"
     },
     {
@@ -35,7 +35,7 @@
       "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
       "language": "Python",
       "stars_today": "765",
-      "total_stars": "11,668",
+      "total_stars": "11,708",
       "url": "https://github.com/paperswithbacktest/awesome-systematic-trading"
     },
     {
@@ -43,7 +43,7 @@
       "description": "12 Weeks, 24 Lessons, AI for All!",
       "language": "Jupyter Notebook",
       "stars_today": "1,592",
-      "total_stars": "55,191",
+      "total_stars": "55,253",
       "url": "https://github.com/microsoft/AI-For-Beginners"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
       "language": "Java",
       "stars_today": "7",
-      "total_stars": "10,109",
+      "total_stars": "10,125",
       "url": "https://github.com/github/copilot-sdk"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
       "language": "Ruby",
       "stars_today": "53",
-      "total_stars": "35,070",
+      "total_stars": "35,092",
       "url": "https://github.com/chatwoot/chatwoot"
     },
     {
@@ -67,7 +67,7 @@
       "description": "a code review TUI with vim keybindings",
       "language": "Rust",
       "stars_today": "336",
-      "total_stars": "2,108",
+      "total_stars": "2,136",
       "url": "https://github.com/agavra/tuicr"
     },
     {
@@ -75,7 +75,7 @@
       "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
       "language": "TypeScript",
       "stars_today": "188",
-      "total_stars": "4,931",
+      "total_stars": "5,015",
       "url": "https://github.com/usekaneo/kaneo"
     },
     {
@@ -83,7 +83,7 @@
       "description": "A Hardware Hacking Tool with Web-Based CLI That Speaks Every Protocol",
       "language": "C++",
       "stars_today": "161",
-      "total_stars": "4,911",
+      "total_stars": "4,958",
       "url": "https://github.com/geo-tp/ESP32-Bit-Pirate"
     },
     {
@@ -91,7 +91,7 @@
       "description": "Deepfakes Software For All",
       "language": "Python",
       "stars_today": "157",
-      "total_stars": "56,913",
+      "total_stars": "56,948",
       "url": "https://github.com/deepfakes/faceswap"
     },
     {
@@ -99,7 +99,7 @@
       "description": "The most RAM efficient harness",
       "language": "Rust",
       "stars_today": "468",
-      "total_stars": "14,548",
+      "total_stars": "14,583",
       "url": "https://github.com/1jehuang/jcode"
     }
   ]
