@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-05T16:46:13.243481+00:00",
+    "fetched_at": "2026-08-05T19:44:46.275602+00:00",
     "since": "daily",
     "language": "all",
     "count": 13
@@ -11,7 +11,7 @@
       "description": "Give your agent a computer 👾",
       "language": "TypeScript",
       "stars_today": "796",
-      "total_stars": "2,201",
+      "total_stars": "2,530",
       "url": "https://github.com/cloudflare/computer"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs.",
       "language": "Python",
       "stars_today": "327",
-      "total_stars": "1,926",
+      "total_stars": "1,995",
       "url": "https://github.com/huangruiteng/loopx"
     },
     {
@@ -27,7 +27,7 @@
       "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents - turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
       "language": "TypeScript",
       "stars_today": "1,891",
-      "total_stars": "14,856",
+      "total_stars": "14,935",
       "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
       "language": "Python",
       "stars_today": "304",
-      "total_stars": "361,334",
+      "total_stars": "361,408",
       "url": "https://github.com/donnemartin/system-design-primer"
     },
     {
@@ -43,7 +43,7 @@
       "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
       "language": "Rust",
       "stars_today": "1,583",
-      "total_stars": "11,127",
+      "total_stars": "11,268",
       "url": "https://github.com/firecrawl/pdf-inspector"
     },
     {
@@ -51,7 +51,7 @@
       "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability - leave it running.",
       "language": "Go",
       "stars_today": "747",
-      "total_stars": "31,413",
+      "total_stars": "31,493",
       "url": "https://github.com/esengine/DeepSeek-Reasonix"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "stars_today": "203",
-      "total_stars": "81,877",
+      "total_stars": "81,920",
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
@@ -67,7 +67,7 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "stars_today": "931",
-      "total_stars": "267,121",
+      "total_stars": "267,207",
       "url": "https://github.com/obra/superpowers"
     },
     {
@@ -75,15 +75,15 @@
       "description": "We write your reusable computer vision tools. 💜",
       "language": "Python",
       "stars_today": "132",
-      "total_stars": "48,828",
+      "total_stars": "48,867",
       "url": "https://github.com/roboflow/supervision"
     },
     {
       "name": "vercel/next.js",
       "description": "The React Framework",
       "language": "JavaScript",
-      "stars_today": "58",
-      "total_stars": "141,462",
+      "stars_today": "144",
+      "total_stars": "141,498",
       "url": "https://github.com/vercel/next.js"
     },
     {
@@ -91,7 +91,7 @@
       "description": "A utility-first CSS framework for rapid UI development.",
       "language": "TypeScript",
       "stars_today": "408",
-      "total_stars": "96,749",
+      "total_stars": "96,793",
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
@@ -99,7 +99,7 @@
       "description": "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
       "language": "Python",
       "stars_today": "354",
-      "total_stars": "944",
+      "total_stars": "979",
       "url": "https://github.com/uber/ADR"
     },
     {
@@ -107,7 +107,7 @@
       "description": "AirLLM 70B inference with single 4GB GPU",
       "language": "Jupyter Notebook",
       "stars_today": "833",
-      "total_stars": "28,932",
+      "total_stars": "28,990",
       "url": "https://github.com/lyogavin/airllm"
     }
   ]
