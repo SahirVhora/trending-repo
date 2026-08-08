@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-08T07:03:17.322733+00:00",
+    "fetched_at": "2026-08-08T09:44:40.870749+00:00",
     "since": "daily",
     "language": "all",
     "count": 17
@@ -11,7 +11,7 @@
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
       "stars_today": "2,293",
-      "total_stars": "7,079",
+      "total_stars": "7,318",
       "url": "https://github.com/PrimeIntellect-ai/prime-agent"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "stars_today": "1,131",
-      "total_stars": "84,064",
+      "total_stars": "84,133",
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Give your agent a computer 👾",
       "language": "TypeScript",
       "stars_today": "872",
-      "total_stars": "6,010",
+      "total_stars": "6,115",
       "url": "https://github.com/cloudflare/computer"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "stars_today": "2,152",
-      "total_stars": "209,140",
+      "total_stars": "209,312",
       "url": "https://github.com/mattpocock/skills"
     },
     {
@@ -43,7 +43,7 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "stars_today": "782",
-      "total_stars": "268,895",
+      "total_stars": "268,969",
       "url": "https://github.com/obra/superpowers"
     },
     {
@@ -51,7 +51,7 @@
       "description": "The authentication glue you need.",
       "language": "Python",
       "stars_today": "530",
-      "total_stars": "23,709",
+      "total_stars": "23,768",
       "url": "https://github.com/goauthentik/authentik"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "stars_today": "122",
-      "total_stars": "2,422",
+      "total_stars": "2,451",
       "url": "https://github.com/semantica-agi/semantica"
     },
     {
@@ -67,7 +67,7 @@
       "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
       "language": "Python",
       "stars_today": "141",
-      "total_stars": "70,623",
+      "total_stars": "70,672",
       "url": "https://github.com/666ghj/MiroFish"
     },
     {
@@ -75,7 +75,7 @@
       "description": "Multi-account API gateway for Grok Build, Grok Web, and Grok Console",
       "language": "Go",
       "stars_today": "55",
-      "total_stars": "7,171",
+      "total_stars": "7,184",
       "url": "https://github.com/chenyme/grok2api"
     },
     {
@@ -83,7 +83,7 @@
       "description": "dev tools, env vars, task runner",
       "language": "Rust",
       "stars_today": "135",
-      "total_stars": "32,114",
+      "total_stars": "32,130",
       "url": "https://github.com/jdx/mise"
     },
     {
@@ -91,7 +91,7 @@
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
       "language": "Python",
       "stars_today": "355",
-      "total_stars": "186,384",
+      "total_stars": "186,408",
       "url": "https://github.com/Significant-Gravitas/AutoGPT"
     },
     {
@@ -99,7 +99,7 @@
       "description": "Google core libraries for Java",
       "language": "Java",
       "stars_today": "152",
-      "total_stars": "51,783",
+      "total_stars": "51,791",
       "url": "https://github.com/google/guava"
     },
     {
@@ -107,7 +107,7 @@
       "description": "A simple tool for coordinating several AI agents.",
       "language": "Clojure",
       "stars_today": "81",
-      "total_stars": "1,894",
+      "total_stars": "1,915",
       "url": "https://github.com/unclebob/swarm-forge"
     },
     {
@@ -115,7 +115,7 @@
       "description": "self-hosted, distributed Durable Objects",
       "language": "Rust",
       "stars_today": "516",
-      "total_stars": "2,306",
+      "total_stars": "2,344",
       "url": "https://github.com/denoland/celld"
     },
     {
@@ -123,7 +123,7 @@
       "description": "A list of OSINT tools & resources for (fraud-)investigators, CTI-analysts, KYC, AML and more.",
       "language": "Unknown",
       "stars_today": "109",
-      "total_stars": "1,552",
+      "total_stars": "1,597",
       "url": "https://github.com/K2SOsint/Legendary_OSINT"
     },
     {
@@ -131,7 +131,7 @@
       "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
       "language": "Go",
       "stars_today": "234",
-      "total_stars": "19,903",
+      "total_stars": "19,975",
       "url": "https://github.com/pranshuparmar/witr"
     },
     {
@@ -139,7 +139,7 @@
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
       "stars_today": "327",
-      "total_stars": "16,372",
+      "total_stars": "16,423",
       "url": "https://github.com/google/skills"
     }
   ]
