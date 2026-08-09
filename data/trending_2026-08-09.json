@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-09T09:47:54.962320+00:00",
+    "fetched_at": "2026-08-09T13:04:26.943006+00:00",
     "since": "daily",
     "language": "all",
     "count": 12
@@ -11,96 +11,96 @@
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
       "stars_today": "2,483",
-      "total_stars": "9,690",
+      "total_stars": "9,997",
       "url": "https://github.com/PrimeIntellect-ai/prime-agent"
+    },
+    {
+      "name": "vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "language": "Python",
+      "stars_today": "59",
+      "total_stars": "2,700",
+      "url": "https://github.com/vitali87/code-graph-rag"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars_today": "446",
+      "total_stars": "140,113",
+      "url": "https://github.com/msitarzewski/agency-agents"
+    },
+    {
+      "name": "pranshuparmar/witr",
+      "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
+      "language": "Go",
+      "stars_today": "556",
+      "total_stars": "20,267",
+      "url": "https://github.com/pranshuparmar/witr"
+    },
+    {
+      "name": "google-deepmind/weathernext",
+      "description": "",
+      "language": "Python",
+      "stars_today": "55",
+      "total_stars": "6,926",
+      "url": "https://github.com/google-deepmind/weathernext"
     },
     {
       "name": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "stars_today": "779",
-      "total_stars": "84,803",
+      "total_stars": "84,875",
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
-      "name": "TapXWorld/ChinaTextbook",
-      "description": "所有小初高、大学PDF教材。",
-      "language": "Roff",
-      "stars_today": "118",
-      "total_stars": "78,108",
-      "url": "https://github.com/TapXWorld/ChinaTextbook"
-    },
-    {
-      "name": "google/skills",
-      "description": "Agent Skills for Google products and technologies",
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars_today": "481",
-      "total_stars": "16,933",
-      "url": "https://github.com/google/skills"
-    },
-    {
-      "name": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "stars_today": "1,359",
-      "total_stars": "210,478",
-      "url": "https://github.com/mattpocock/skills"
+      "stars_today": "287",
+      "total_stars": "60,923",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     },
     {
       "name": "goauthentik/authentik",
       "description": "The authentication glue you need.",
       "language": "Python",
       "stars_today": "467",
-      "total_stars": "24,088",
+      "total_stars": "24,132",
       "url": "https://github.com/goauthentik/authentik"
     },
     {
-      "name": "TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "name": "google/skills",
+      "description": "Agent Skills for Google products and technologies",
       "language": "Python",
-      "stars_today": "153",
-      "total_stars": "96,739",
-      "url": "https://github.com/TauricResearch/TradingAgents"
+      "stars_today": "481",
+      "total_stars": "16,999",
+      "url": "https://github.com/google/skills"
     },
     {
-      "name": "google/guava",
-      "description": "Google core libraries for Java",
-      "language": "Java",
-      "stars_today": "93",
-      "total_stars": "51,884",
-      "url": "https://github.com/google/guava"
+      "name": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "language": "Python",
+      "stars_today": "333",
+      "total_stars": "125,143",
+      "url": "https://github.com/Comfy-Org/ComfyUI"
     },
     {
-      "name": "LadybirdBrowser/ladybird",
-      "description": "Truly independent web browser",
-      "language": "C++",
-      "stars_today": "48",
-      "total_stars": "65,085",
-      "url": "https://github.com/LadybirdBrowser/ladybird"
+      "name": "harveyai/harvey-labs",
+      "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
+      "language": "Python",
+      "stars_today": "47",
+      "total_stars": "697",
+      "url": "https://github.com/harveyai/harvey-labs"
     },
     {
-      "name": "denoland/celld",
-      "description": "self-hosted, distributed Durable Objects",
-      "language": "Rust",
-      "stars_today": "432",
-      "total_stars": "2,740",
-      "url": "https://github.com/denoland/celld"
-    },
-    {
-      "name": "litu54/DevOps-Interview-Guide",
-      "description": "DevOps Interview Guide",
-      "language": "Unknown",
-      "stars_today": "68",
-      "total_stars": "779",
-      "url": "https://github.com/litu54/DevOps-Interview-Guide"
-    },
-    {
-      "name": "bannedbook/fanqiang",
-      "description": "翻墙-科学上网",
-      "language": "Kotlin",
-      "stars_today": "101",
-      "total_stars": "50,103",
-      "url": "https://github.com/bannedbook/fanqiang"
+      "name": "pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "stars_today": "182",
+      "total_stars": "17,491",
+      "url": "https://github.com/pingdotgg/t3code"
     }
   ]
 }
