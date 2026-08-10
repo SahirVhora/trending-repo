@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-10T07:53:21.008985+00:00",
+    "fetched_at": "2026-08-10T10:23:22.282315+00:00",
     "since": "daily",
     "language": "all",
     "count": 12
@@ -11,7 +11,7 @@
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
       "stars_today": "2,356",
-      "total_stars": "12,059",
+      "total_stars": "12,374",
       "url": "https://github.com/PrimeIntellect-ai/prime-agent"
     },
     {
@@ -19,7 +19,7 @@
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "language": "Python",
       "stars_today": "96",
-      "total_stars": "3,243",
+      "total_stars": "3,318",
       "url": "https://github.com/vitali87/code-graph-rag"
     },
     {
@@ -27,7 +27,7 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "stars_today": "858",
-      "total_stars": "141,173",
+      "total_stars": "141,314",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
       "language": "Go",
       "stars_today": "210",
-      "total_stars": "21,008",
+      "total_stars": "21,127",
       "url": "https://github.com/pranshuparmar/witr"
     },
     {
@@ -43,7 +43,7 @@
       "description": "",
       "language": "Python",
       "stars_today": "86",
-      "total_stars": "7,182",
+      "total_stars": "7,218",
       "url": "https://github.com/google-deepmind/weathernext"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "stars_today": "680",
-      "total_stars": "85,364",
+      "total_stars": "85,427",
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
@@ -59,7 +59,7 @@
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "stars_today": "306",
-      "total_stars": "61,522",
+      "total_stars": "61,637",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     },
     {
@@ -67,7 +67,7 @@
       "description": "The authentication glue you need.",
       "language": "Python",
       "stars_today": "310",
-      "total_stars": "24,398",
+      "total_stars": "24,434",
       "url": "https://github.com/goauthentik/authentik"
     },
     {
@@ -75,7 +75,7 @@
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
       "stars_today": "528",
-      "total_stars": "17,412",
+      "total_stars": "17,489",
       "url": "https://github.com/google/skills"
     },
     {
@@ -83,7 +83,7 @@
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
       "language": "Python",
       "stars_today": "365",
-      "total_stars": "125,838",
+      "total_stars": "125,953",
       "url": "https://github.com/Comfy-Org/ComfyUI"
     },
     {
@@ -91,7 +91,7 @@
       "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
       "language": "Python",
       "stars_today": "47",
-      "total_stars": "913",
+      "total_stars": "947",
       "url": "https://github.com/harveyai/harvey-labs"
     },
     {
@@ -99,7 +99,7 @@
       "description": "",
       "language": "TypeScript",
       "stars_today": "163",
-      "total_stars": "17,787",
+      "total_stars": "17,824",
       "url": "https://github.com/pingdotgg/t3code"
     }
   ]
