@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-12T02:28:40.184716+00:00",
+    "fetched_at": "2026-08-12T04:52:40.765378+00:00",
     "since": "daily",
     "language": "all",
     "count": 17
@@ -11,7 +11,7 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "stars_today": "958",
-      "total_stars": "143,366",
+      "total_stars": "143,602",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "stars_today": "893",
-      "total_stars": "4,953",
+      "total_stars": "5,066",
       "url": "https://github.com/semantica-agi/semantica"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions",
       "language": "Shell",
       "stars_today": "22",
-      "total_stars": "94,496",
+      "total_stars": "94,516",
       "url": "https://github.com/nvm-sh/nvm"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "stars_today": "578",
-      "total_stars": "86,261",
+      "total_stars": "86,313",
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
@@ -43,7 +43,7 @@
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "stars_today": "243",
-      "total_stars": "62,184",
+      "total_stars": "62,275",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     },
     {
@@ -51,7 +51,7 @@
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "language": "Python",
       "stars_today": "341",
-      "total_stars": "3,858",
+      "total_stars": "3,892",
       "url": "https://github.com/vitali87/code-graph-rag"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Public repository for Agent Skills",
       "language": "Python",
       "stars_today": "485",
-      "total_stars": "168,177",
+      "total_stars": "168,253",
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -67,7 +67,7 @@
       "description": "Animation engine for explanatory math videos",
       "language": "Python",
       "stars_today": "197",
-      "total_stars": "90,222",
+      "total_stars": "90,290",
       "url": "https://github.com/3b1b/manim"
     },
     {
@@ -75,7 +75,7 @@
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
       "stars_today": "812",
-      "total_stars": "34,786",
+      "total_stars": "34,872",
       "url": "https://github.com/HKUDS/DeepTutor"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
       "language": "TypeScript",
       "stars_today": "875",
-      "total_stars": "42,870",
+      "total_stars": "42,984",
       "url": "https://github.com/stablyai/orca"
     },
     {
@@ -91,7 +91,7 @@
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
       "stars_today": "748",
-      "total_stars": "77,207",
+      "total_stars": "77,274",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -99,7 +99,7 @@
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
       "language": "Python",
       "stars_today": "80",
-      "total_stars": "163,832",
+      "total_stars": "163,874",
       "url": "https://github.com/huggingface/transformers"
     },
     {
@@ -107,7 +107,7 @@
       "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work.",
       "language": "Python",
       "stars_today": "28",
-      "total_stars": "1,095",
+      "total_stars": "1,111",
       "url": "https://github.com/harveyai/harvey-labs"
     },
     {
@@ -115,7 +115,7 @@
       "description": " This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.",
       "language": "Swift",
       "stars_today": "298",
-      "total_stars": "110,514",
+      "total_stars": "110,577",
       "url": "https://github.com/jaywcjlove/awesome-mac"
     },
     {
@@ -123,7 +123,7 @@
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "stars_today": "458",
-      "total_stars": "47,391",
+      "total_stars": "47,484",
       "url": "https://github.com/calesthio/OpenMontage"
     },
     {
@@ -131,7 +131,7 @@
       "description": "Curated list of project-based tutorials",
       "language": "Python",
       "stars_today": "401",
-      "total_stars": "278,499",
+      "total_stars": "278,564",
       "url": "https://github.com/practical-tutorials/project-based-learning"
     },
     {
@@ -139,7 +139,7 @@
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
       "stars_today": "1,138",
-      "total_stars": "14,168",
+      "total_stars": "14,322",
       "url": "https://github.com/PrimeIntellect-ai/prime-agent"
     }
   ]
