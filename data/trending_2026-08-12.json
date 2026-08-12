@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-12T13:23:43.901485+00:00",
+    "fetched_at": "2026-08-12T16:02:44.355490+00:00",
     "since": "daily",
     "language": "all",
     "count": 17
@@ -10,16 +10,16 @@
       "name": "cathrynlavery/diagram-design",
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
-      "stars_today": "1,616",
-      "total_stars": "8,482",
+      "stars_today": "2,951",
+      "total_stars": "9,066",
       "url": "https://github.com/cathrynlavery/diagram-design"
     },
     {
       "name": "macro-inc/macro",
       "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM - @-linked together with shared AI memory.",
       "language": "Rust",
-      "stars_today": "248",
-      "total_stars": "1,235",
+      "stars_today": "325",
+      "total_stars": "1,410",
       "url": "https://github.com/macro-inc/macro"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "stars_today": "834",
-      "total_stars": "5,434",
+      "total_stars": "5,531",
       "url": "https://github.com/semantica-agi/semantica"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
       "language": "TypeScript",
       "stars_today": "1,215",
-      "total_stars": "43,435",
+      "total_stars": "43,582",
       "url": "https://github.com/stablyai/orca"
     },
     {
@@ -43,23 +43,23 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "stars_today": "1,969",
-      "total_stars": "144,258",
+      "total_stars": "144,376",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
       "name": "shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars_today": "238",
-      "total_stars": "36,838",
+      "stars_today": "277",
+      "total_stars": "36,877",
       "url": "https://github.com/shiyu-coder/Kronos"
     },
     {
       "name": "NanmiCoder/MediaCrawler",
       "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
       "language": "Python",
-      "stars_today": "855",
-      "total_stars": "61,850",
+      "stars_today": "236",
+      "total_stars": "61,907",
       "url": "https://github.com/NanmiCoder/MediaCrawler"
     },
     {
@@ -67,7 +67,7 @@
       "description": "AI turns documents or topics into real, native PowerPoint decks-with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
       "language": "Python",
       "stars_today": "364",
-      "total_stars": "45,216",
+      "total_stars": "45,378",
       "url": "https://github.com/hugohe3/ppt-master"
     },
     {
@@ -75,7 +75,7 @@
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "language": "Go",
       "stars_today": "85",
-      "total_stars": "87,384",
+      "total_stars": "87,444",
       "url": "https://github.com/infiniflow/ragflow"
     },
     {
@@ -83,7 +83,7 @@
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
       "stars_today": "573",
-      "total_stars": "77,491",
+      "total_stars": "77,560",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -91,7 +91,7 @@
       "description": "",
       "language": "Rust",
       "stars_today": "370",
-      "total_stars": "625",
+      "total_stars": "686",
       "url": "https://github.com/NVIDIA-NeMo/Switchyard"
     },
     {
@@ -99,7 +99,7 @@
       "description": "人人都能用英语",
       "language": "TypeScript",
       "stars_today": "53",
-      "total_stars": "35,949",
+      "total_stars": "35,999",
       "url": "https://github.com/ZuodaoTech/everyone-can-use-english"
     },
     {
@@ -107,7 +107,7 @@
       "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
       "language": "Python",
       "stars_today": "40",
-      "total_stars": "20,234",
+      "total_stars": "20,262",
       "url": "https://github.com/smicallef/spiderfoot"
     },
     {
@@ -115,7 +115,7 @@
       "description": "An open-source cross-platform alternative to AirDrop",
       "language": "Dart",
       "stars_today": "159",
-      "total_stars": "87,527",
+      "total_stars": "87,614",
       "url": "https://github.com/localsend/localsend"
     },
     {
@@ -123,7 +123,7 @@
       "description": "Official Python inference and LoRA trainer package for the LTX-2 audio-video generative model.",
       "language": "Python",
       "stars_today": "40",
-      "total_stars": "8,622",
+      "total_stars": "8,633",
       "url": "https://github.com/Lightricks/LTX-2"
     },
     {
@@ -131,15 +131,15 @@
       "description": "Agent framework for the JVM. Pronounced Em-BAY-bel /ɛmˈbeɪbəl/",
       "language": "Kotlin",
       "stars_today": "29",
-      "total_stars": "4,168",
+      "total_stars": "4,188",
       "url": "https://github.com/embabel/embabel-agent"
     },
     {
       "name": "cactus-compute/needle",
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
-      "stars_today": "248",
-      "total_stars": "3,909",
+      "stars_today": "346",
+      "total_stars": "4,019",
       "url": "https://github.com/cactus-compute/needle"
     }
   ]
