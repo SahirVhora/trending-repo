@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-15T18:38:08.667298+00:00",
+    "fetched_at": "2026-08-15T21:26:43.220448+00:00",
     "since": "daily",
     "language": "all",
     "count": 13
@@ -11,7 +11,7 @@
       "description": "Meta-Framework of Spatiotemporal Composability",
       "language": "TypeScript",
       "stars_today": "616",
-      "total_stars": "3,952",
+      "total_stars": "4,011",
       "url": "https://github.com/cordiverse/cordis"
     },
     {
@@ -19,7 +19,7 @@
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
       "language": "HTML",
       "stars_today": "1,619",
-      "total_stars": "18,398",
+      "total_stars": "18,519",
       "url": "https://github.com/cathrynlavery/diagram-design"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
       "stars_today": "152",
-      "total_stars": "2,919",
+      "total_stars": "2,933",
       "url": "https://github.com/cursor/plugins"
     },
     {
@@ -35,7 +35,7 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "stars_today": "551",
-      "total_stars": "5,980",
+      "total_stars": "6,026",
       "url": "https://github.com/cactus-compute/needle"
     },
     {
@@ -43,7 +43,7 @@
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
       "language": "Python",
       "stars_today": "435",
-      "total_stars": "71,924",
+      "total_stars": "71,992",
       "url": "https://github.com/unslothai/unsloth"
     },
     {
@@ -51,7 +51,7 @@
       "description": "A collective list of free APIs",
       "language": "Python",
       "stars_today": "2,476",
-      "total_stars": "459,887",
+      "total_stars": "460,059",
       "url": "https://github.com/public-apis/public-apis"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
       "language": "Python",
       "stars_today": "303",
-      "total_stars": "1,562",
+      "total_stars": "1,605",
       "url": "https://github.com/MakazhanAlpamys/Soup"
     },
     {
@@ -67,7 +67,7 @@
       "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
       "stars_today": "901",
-      "total_stars": "129,060",
+      "total_stars": "129,124",
       "url": "https://github.com/github/spec-kit"
     },
     {
@@ -75,7 +75,7 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "stars_today": "389",
-      "total_stars": "13,050",
+      "total_stars": "13,085",
       "url": "https://github.com/megadose/holehe"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
       "language": "Swift",
       "stars_today": "165",
-      "total_stars": "10,252",
+      "total_stars": "10,288",
       "url": "https://github.com/altic-dev/FluidVoice"
     },
     {
@@ -91,7 +91,7 @@
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
       "language": "JavaScript",
       "stars_today": "553",
-      "total_stars": "39,425",
+      "total_stars": "39,478",
       "url": "https://github.com/ToolJet/ToolJet"
     },
     {
@@ -99,7 +99,7 @@
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
       "stars_today": "100",
-      "total_stars": "47,253",
+      "total_stars": "47,304",
       "url": "https://github.com/HKUDS/CLI-Anything"
     },
     {
@@ -107,7 +107,7 @@
       "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
       "language": "JavaScript",
       "stars_today": "546",
-      "total_stars": "10,807",
+      "total_stars": "10,896",
       "url": "https://github.com/citrolabs/ego-lite"
     }
   ]
