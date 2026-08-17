@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "fetched_at": "2026-08-17T01:44:01.423459+00:00",
+    "since": "daily",
+    "language": "all",
+    "count": 7
+  },
+  "repositories": [
+    {
+      "name": "cordiverse/cordis",
+      "description": "Meta-Framework of Spatiotemporal Composability",
+      "language": "TypeScript",
+      "stars_today": "720",
+      "total_stars": "4,784",
+      "url": "https://github.com/cordiverse/cordis"
+    },
+    {
+      "name": "basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "stars_today": "270",
+      "total_stars": "25,416",
+      "url": "https://github.com/basecamp/omarchy"
+    },
+    {
+      "name": "unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "language": "Python",
+      "stars_today": "572",
+      "total_stars": "72,621",
+      "url": "https://github.com/unslothai/unsloth"
+    },
+    {
+      "name": "OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
+      "language": "TypeScript",
+      "stars_today": "150",
+      "total_stars": "83,923",
+      "url": "https://github.com/OpenCut-app/OpenCut"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "stars_today": "1,588",
+      "total_stars": "461,822",
+      "url": "https://github.com/public-apis/public-apis"
+    },
+    {
+      "name": "ToolJet/ToolJet",
+      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+      "language": "JavaScript",
+      "stars_today": "452",
+      "total_stars": "40,062",
+      "url": "https://github.com/ToolJet/ToolJet"
+    },
+    {
+      "name": "cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "language": "Python",
+      "stars_today": "443",
+      "total_stars": "6,607",
+      "url": "https://github.com/cactus-compute/needle"
+    }
+  ]
+}
