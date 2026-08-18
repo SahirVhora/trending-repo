@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-18T01:39:23.354271+00:00",
+    "fetched_at": "2026-08-18T03:50:07.564688+00:00",
     "since": "daily",
     "language": "all",
     "count": 11
@@ -11,7 +11,7 @@
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
       "stars_today": "1,189",
-      "total_stars": "106,134",
+      "total_stars": "106,476",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo"
     },
     {
@@ -19,7 +19,7 @@
       "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
       "language": "Python",
       "stars_today": "598",
-      "total_stars": "54,230",
+      "total_stars": "54,368",
       "url": "https://github.com/usestrix/strix"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
       "language": "Rust",
       "stars_today": "120",
-      "total_stars": "25,943",
+      "total_stars": "26,011",
       "url": "https://github.com/nautechsystems/nautilus_trader"
     },
     {
@@ -35,7 +35,7 @@
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
       "stars_today": "207",
-      "total_stars": "2,091",
+      "total_stars": "2,219",
       "url": "https://github.com/akitaonrails/ai-memory"
     },
     {
@@ -43,7 +43,7 @@
       "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
       "language": "Python",
       "stars_today": "198",
-      "total_stars": "28,461",
+      "total_stars": "28,541",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
       "language": "Rust",
       "stars_today": "198",
-      "total_stars": "32,310",
+      "total_stars": "32,394",
       "url": "https://github.com/AlexsJones/llmfit"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications - runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
       "language": "JavaScript",
       "stars_today": "218",
-      "total_stars": "64,694",
+      "total_stars": "64,857",
       "url": "https://github.com/santifer/career-ops"
     },
     {
@@ -67,7 +67,7 @@
       "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon - managed from the macOS menu bar",
       "language": "Python",
       "stars_today": "78",
-      "total_stars": "19,009",
+      "total_stars": "19,051",
       "url": "https://github.com/jundot/omlx"
     },
     {
@@ -75,7 +75,7 @@
       "description": "High performance self-hosted photo and video management solution.",
       "language": "TypeScript",
       "stars_today": "175",
-      "total_stars": "111,181",
+      "total_stars": "111,263",
       "url": "https://github.com/immich-app/immich"
     },
     {
@@ -83,7 +83,7 @@
       "description": "Meta-Framework of Spatiotemporal Composability",
       "language": "TypeScript",
       "stars_today": "957",
-      "total_stars": "5,624",
+      "total_stars": "5,730",
       "url": "https://github.com/cordiverse/cordis"
     },
     {
@@ -91,7 +91,7 @@
       "description": "A full-featured download manager.",
       "language": "TypeScript",
       "stars_today": "344",
-      "total_stars": "53,100",
+      "total_stars": "53,186",
       "url": "https://github.com/agalwood/Motrix"
     }
   ]
