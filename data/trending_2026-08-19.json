@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetched_at": "2026-08-19T12:58:32.939244+00:00",
+    "fetched_at": "2026-08-19T15:37:37.042780+00:00",
     "since": "daily",
     "language": "all",
-    "count": 12
+    "count": 14
   },
   "repositories": [
     {
@@ -11,96 +11,112 @@
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
       "stars_today": "2,221",
-      "total_stars": "109,706",
+      "total_stars": "110,015",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo"
-    },
-    {
-      "name": "chaitanyagiri/munder-difflin",
-      "description": "local multi-agent harness",
-      "language": "TypeScript",
-      "stars_today": "797",
-      "total_stars": "2,456",
-      "url": "https://github.com/chaitanyagiri/munder-difflin"
-    },
-    {
-      "name": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "stars_today": "609",
-      "total_stars": "3,061",
-      "url": "https://github.com/akitaonrails/ai-memory"
     },
     {
       "name": "volcengine/OpenViking",
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
       "stars_today": "803",
-      "total_stars": "29,839",
+      "total_stars": "29,936",
       "url": "https://github.com/volcengine/OpenViking"
+    },
+    {
+      "name": "chaitanyagiri/munder-difflin",
+      "description": "local multi-agent harness",
+      "language": "TypeScript",
+      "stars_today": "797",
+      "total_stars": "2,536",
+      "url": "https://github.com/chaitanyagiri/munder-difflin"
     },
     {
       "name": "mukul975/Anthropic-Cybersecurity-Skills",
       "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
       "language": "Python",
       "stars_today": "767",
-      "total_stars": "29,560",
+      "total_stars": "29,630",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
     },
     {
-      "name": "public-apis/public-apis",
-      "description": "A collective list of free APIs",
-      "language": "Python",
-      "stars_today": "1,717",
-      "total_stars": "465,420",
-      "url": "https://github.com/public-apis/public-apis"
+      "name": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars_today": "609",
+      "total_stars": "3,126",
+      "url": "https://github.com/akitaonrails/ai-memory"
     },
     {
-      "name": "basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
+      "name": "nautechsystems/nautilus_trader",
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "language": "Rust",
+      "stars_today": "79",
+      "total_stars": "26,317",
+      "url": "https://github.com/nautechsystems/nautilus_trader"
+    },
+    {
+      "name": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars_today": "473",
-      "total_stars": "26,667",
-      "url": "https://github.com/basecamp/omarchy"
+      "stars_today": "1,214",
+      "total_stars": "223,138",
+      "url": "https://github.com/mattpocock/skills"
     },
     {
-      "name": "agalwood/Motrix",
-      "description": "A full-featured download manager.",
-      "language": "TypeScript",
-      "stars_today": "561",
-      "total_stars": "53,975",
-      "url": "https://github.com/agalwood/Motrix"
-    },
-    {
-      "name": "NawfalMotii79/PLFM_RADAR",
-      "description": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
-      "language": "PLSQL",
-      "stars_today": "350",
-      "total_stars": "24,513",
-      "url": "https://github.com/NawfalMotii79/PLFM_RADAR"
+      "name": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_today": "514",
+      "total_stars": "274,064",
+      "url": "https://github.com/obra/superpowers"
     },
     {
       "name": "jundot/omlx",
       "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon - managed from the macOS menu bar",
       "language": "Python",
       "stars_today": "467",
-      "total_stars": "19,666",
+      "total_stars": "19,722",
       "url": "https://github.com/jundot/omlx"
+    },
+    {
+      "name": "santifer/career-ops",
+      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications - runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "language": "JavaScript",
+      "stars_today": "193",
+      "total_stars": "65,519",
+      "url": "https://github.com/santifer/career-ops"
+    },
+    {
+      "name": "immich-app/immich",
+      "description": "High performance self-hosted photo and video management solution.",
+      "language": "TypeScript",
+      "stars_today": "137",
+      "total_stars": "111,681",
+      "url": "https://github.com/immich-app/immich"
+    },
+    {
+      "name": "amadeusprotocol/node",
+      "description": "",
+      "language": "Rust",
+      "stars_today": "1,415",
+      "total_stars": "4,284",
+      "url": "https://github.com/amadeusprotocol/node"
+    },
+    {
+      "name": "marceloprates/prettymaps",
+      "description": "Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely",
+      "language": "Python",
+      "stars_today": "58",
+      "total_stars": "12,869",
+      "url": "https://github.com/marceloprates/prettymaps"
     },
     {
       "name": "genlayerlabs/genlayer-project-boilerplate",
       "description": "",
       "language": "TypeScript",
       "stars_today": "421",
-      "total_stars": "16,124",
+      "total_stars": "16,142",
       "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate"
-    },
-    {
-      "name": "OpenCut-app/OpenCut",
-      "description": "The open-source CapCut alternative",
-      "language": "TypeScript",
-      "stars_today": "647",
-      "total_stars": "85,135",
-      "url": "https://github.com/OpenCut-app/OpenCut"
     }
   ]
 }
