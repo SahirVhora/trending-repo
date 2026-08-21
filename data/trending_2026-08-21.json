@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-08-21T09:43:06.591108+00:00",
+    "fetched_at": "2026-08-21T13:00:07.223930+00:00",
     "since": "daily",
     "language": "all",
     "count": 17
@@ -10,136 +10,136 @@
       "name": "modular/modular",
       "description": "The Modular Platform (includes MAX & Mojo)",
       "language": "Mojo",
-      "stars_today": "268",
-      "total_stars": "28,301",
+      "stars_today": "905",
+      "total_stars": "28,411",
       "url": "https://github.com/modular/modular"
     },
     {
       "name": "mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars_today": "2,192",
-      "total_stars": "227,845",
+      "stars_today": "3,368",
+      "total_stars": "228,260",
       "url": "https://github.com/mattpocock/skills"
     },
     {
       "name": "AprilNEA/OpenLogi",
       "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 - remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
-      "stars_today": "1,545",
-      "total_stars": "12,349",
+      "stars_today": "1,372",
+      "total_stars": "12,491",
       "url": "https://github.com/AprilNEA/OpenLogi"
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars_today": "727",
-      "total_stars": "275,282",
+      "stars_today": "789",
+      "total_stars": "275,371",
       "url": "https://github.com/obra/superpowers"
     },
     {
       "name": "cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars_today": "449",
-      "total_stars": "4,226",
+      "stars_today": "391",
+      "total_stars": "4,265",
       "url": "https://github.com/cursor/plugins"
     },
     {
       "name": "santifer/career-ops",
       "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications - runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
       "language": "JavaScript",
-      "stars_today": "816",
-      "total_stars": "67,067",
+      "stars_today": "918",
+      "total_stars": "67,151",
       "url": "https://github.com/santifer/career-ops"
     },
     {
       "name": "akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars_today": "332",
-      "total_stars": "3,804",
+      "stars_today": "468",
+      "total_stars": "3,846",
       "url": "https://github.com/akitaonrails/ai-memory"
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars_today": "2,761",
-      "total_stars": "113,415",
+      "stars_today": "1,187",
+      "total_stars": "113,522",
       "url": "https://github.com/harry0703/MoneyPrinterTurbo"
     },
     {
       "name": "agent-substrate/substrate",
       "description": "Agent Substrate: the core system",
       "language": "Go",
-      "stars_today": "22",
-      "total_stars": "1,496",
+      "stars_today": "245",
+      "total_stars": "1,531",
       "url": "https://github.com/agent-substrate/substrate"
     },
     {
       "name": "chaitanyagiri/munder-difflin",
       "description": "local multi-agent harness",
       "language": "TypeScript",
-      "stars_today": "507",
-      "total_stars": "3,254",
+      "stars_today": "344",
+      "total_stars": "3,294",
       "url": "https://github.com/chaitanyagiri/munder-difflin"
     },
     {
       "name": "PostHog/posthog",
       "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
       "language": "Python",
-      "stars_today": "60",
-      "total_stars": "38,123",
+      "stars_today": "334",
+      "total_stars": "38,156",
       "url": "https://github.com/PostHog/posthog"
     },
     {
       "name": "mahlernim/google-timeline-visualizer",
       "description": "Visualize your year in travel using your Google Location History (Timeline) data",
       "language": "Kotlin",
-      "stars_today": "657",
-      "total_stars": "1,937",
+      "stars_today": "1,040",
+      "total_stars": "2,023",
       "url": "https://github.com/mahlernim/google-timeline-visualizer"
     },
     {
       "name": "volcengine/OpenViking",
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
-      "stars_today": "950",
-      "total_stars": "31,328",
+      "stars_today": "659",
+      "total_stars": "31,417",
       "url": "https://github.com/volcengine/OpenViking"
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick - Claude Code skill that cuts 65% of tokens by talking like caveman",
       "language": "Go",
-      "stars_today": "258",
-      "total_stars": "99,867",
+      "stars_today": "594",
+      "total_stars": "99,939",
       "url": "https://github.com/JuliusBrussee/caveman"
     },
     {
       "name": "makeplane/plane",
       "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
       "language": "TypeScript",
-      "stars_today": "98",
-      "total_stars": "56,718",
+      "stars_today": "577",
+      "total_stars": "56,789",
       "url": "https://github.com/makeplane/plane"
     },
     {
       "name": "Tencent/AI-Infra-Guard",
       "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
       "language": "Python",
-      "stars_today": "50",
-      "total_stars": "5,158",
+      "stars_today": "435",
+      "total_stars": "5,205",
       "url": "https://github.com/Tencent/AI-Infra-Guard"
     },
     {
       "name": "RyanCodrai/turbovec",
       "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
       "language": "Rust",
-      "stars_today": "230",
-      "total_stars": "16,077",
+      "stars_today": "348",
+      "total_stars": "16,114",
       "url": "https://github.com/RyanCodrai/turbovec"
     }
   ]
