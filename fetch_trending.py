@@ -18,8 +18,8 @@ import pathlib
 import re
 import shutil
 import sys
-import urllib.request
-from urllib.error import HTTPError, URLError
+import requests
+from requests.exceptions import HTTPError as RequestsHTTPError, RequestException
 
 
 def fetch_trending(since: str = "daily", language: str = "") -> list[dict]:
@@ -41,16 +41,16 @@ def fetch_trending(since: str = "daily", language: str = "") -> list[dict]:
         ),
     }
 
-    req = urllib.request.Request(url, headers=headers)
-
     try:
-        with urllib.request.urlopen(req, timeout=15) as response:
-            html = response.read().decode("utf-8")
-    except HTTPError as e:
-        print(f"HTTP error {e.code}: {e.reason}", file=sys.stderr)
+        response = requests.get(url, headers=headers, timeout=15, allow_redirects=True)
+        response.raise_for_status()
+        html = response.text
+    except RequestsHTTPError as e:
+        status = e.response.status_code if e.response is not None else '?'
+        print(f"HTTP error {status}: {e}", file=sys.stderr)
         sys.exit(1)
-    except URLError as e:
-        print(f"URL error: {e.reason}", file=sys.stderr)
+    except RequestException as e:
+        print(f"URL error: {e}", file=sys.stderr)
         sys.exit(1)
 
     return _parse_repos(html)
